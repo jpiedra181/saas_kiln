@@ -1,0 +1,121 @@
+---
+/**
+ * Precios (sección "Pricing" con "Billing toggle" y "Plan card" de Figma).
+ * Cada precio lleva sus dos valores (price-monthly / price-annual) y src/scripts/billing.ts los alterna.
+ */
+import Badge from '../ui/Badge.astro';
+import Button from '../ui/Button.astro';
+import ListItem from '../ui/ListItem.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
+import BillingToggle from '../controls/BillingToggle.astro';
+import { links, sections } from '../../config/site';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const plans = [
+  { key: 'essential', featured: false, href: links.signup },
+  { key: 'studio', featured: true, href: links.trial },
+  { key: 'agency', featured: false, href: links.sales },
+] as const;
+const features = [1, 2, 3, 4, 5] as const;
+---
+
+<section
+  id={sections.pricing}
+  class="px-page py-section-padding"
+  aria-labelledby="pricing-title"
+  data-section="pricing"
+>
+  <div class="mx-auto flex w-full max-w-hero-media flex-col items-center gap-section-gap">
+    <div class="flex w-full flex-col items-center gap-content">
+      <SectionHeader
+        id="pricing-title"
+        eyebrow={t('pricing.eyebrow')}
+        title={t('pricing.title')}
+        subtitle={t('pricing.subtitle')}
+      />
+      <div class="flex" data-reveal>
+        <BillingToggle locale={locale} />
+      </div>
+    </div>
+
+    <ul class="flex w-full flex-wrap justify-center gap-grid lg:grid lg:grid-cols-3">
+      {plans.map(({ key, featured, href }) => (
+        <li class="flex w-plan max-w-full lg:w-auto" data-reveal>
+          <article
+            class:list={[
+              'flex w-full flex-col gap-24 rounded-24 p-card transition-[border-color,box-shadow]',
+              featured
+                ? 'bg-emphasis shadow-md hover:shadow-lg'
+                : 'border border-default bg-surface hover:border-strong hover:shadow-md',
+            ]}
+            aria-labelledby={`plan-${key}`}
+          >
+            <div class="flex flex-col gap-8">
+              <div class="flex items-center justify-between gap-12">
+                <h3 id={`plan-${key}`} class:list={['type-h4', featured ? 'text-on-emphasis' : 'text-primary']}>
+                  {t(`pricing.${key}.name`)}
+                </h3>
+                {featured && (
+                  <Badge tone="brand" dot={false}>
+                    {t('pricing.badge')}
+                  </Badge>
+                )}
+              </div>
+              <p class:list={['type-body-sm', featured ? 'text-on-emphasis-secondary' : 'text-secondary']}>
+                {t(`pricing.${key}.desc`)}
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-4 whitespace-nowrap">
+              <p class="flex items-baseline gap-6">
+                <span
+                  class:list={['type-price', featured ? 'text-on-emphasis' : 'text-primary']}
+                  data-price
+                  data-monthly={t(`pricing.${key}.price-monthly`)}
+                  data-annual={t(`pricing.${key}.price-annual`)}
+                >
+                  {t(`pricing.${key}.price-monthly`)}
+                </span>
+                <span class:list={['type-body-md', featured ? 'text-on-emphasis-secondary' : 'text-secondary']}>
+                  {t('pricing.period')}
+                </span>
+              </p>
+              <p
+                class:list={['type-caption', featured ? 'text-on-emphasis-secondary' : 'text-tertiary']}
+                data-price
+                data-monthly={t(`pricing.${key}.note-monthly`)}
+                data-annual={t(`pricing.${key}.note-annual`)}
+              >
+                {t(`pricing.${key}.note-monthly`)}
+              </p>
+            </div>
+
+            <Button size="lg" variant={featured ? 'primary' : 'secondary'} block href={href}>
+              {t(`pricing.${key}.cta`)}
+            </Button>
+
+            <span class:list={['border-t', featured ? 'border-on-emphasis' : 'border-default']} />
+
+            <ul class="flex flex-col gap-12">
+              {features.map((n) => (
+                <ListItem size="sm" tone={featured ? 'on-emphasis' : 'default'}>
+                  {t(`pricing.${key}.feature-${n}`)}
+                </ListItem>
+              ))}
+            </ul>
+          </article>
+        </li>
+      ))}
+    </ul>
+
+    <p class="w-full text-center type-body-sm text-tertiary" data-reveal>
+      {t('pricing.note')}
+    </p>
+  </div>
+</section>

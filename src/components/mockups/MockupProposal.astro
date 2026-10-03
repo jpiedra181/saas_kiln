@@ -1,0 +1,55 @@
+---
+/** Mockup de propuesta con aprobación (componente "Mockup/Proposal" de Figma). */
+import Avatar from '../ui/Avatar.astro';
+import Badge from '../ui/Badge.astro';
+import Icon from '../ui/Icon.astro';
+import MockupFrame from './MockupFrame.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const items = [1, 2, 3] as const;
+---
+
+<MockupFrame tone="clay" label={t('a11y.mock-proposal')}>
+  <div class="mockup-card flex w-full flex-col gap-16 overflow-hidden rounded-20 border border-default bg-surface p-24 shadow-lg">
+    <div class="flex items-center justify-between">
+      <span class="type-overline text-brand">{t('mock.proposal.label')}</span>
+      <Badge tone="success">{t('app.status.approved')}</Badge>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="type-h4 text-primary">{t('mock.proposal.title')}</span>
+      <span class="type-app-label text-tertiary">{t('mock.proposal.client')}</span>
+    </div>
+    <span class="border-t border-default"></span>
+    <span class="type-app-label text-tertiary">{t('mock.proposal.scope')}</span>
+    <div class="flex flex-col gap-10">
+      {items.map((n) => (
+        <span class="flex items-center justify-between gap-16 whitespace-nowrap">
+          <span class="type-app-body text-secondary">{t(`mock.proposal.item-${n}`)}</span>
+          <span class="type-app-strong text-right text-primary">{t(`mock.proposal.item-${n}-price`)}</span>
+        </span>
+      ))}
+    </div>
+    <span class="border-t border-default"></span>
+    <div class="flex items-center justify-between gap-16 whitespace-nowrap text-primary">
+      <span class="type-app-strong">{t('mock.proposal.total-label')}</span>
+      <span class="type-numeral text-right">{t('mock.proposal.total')}</span>
+    </div>
+    <div class="flex items-start gap-10" data-mockup-pop>
+      <Avatar initials={t('mock.proposal.comment-initials')} tone="ember" />
+      <span class="flex min-w-0 flex-1 flex-col gap-2 rounded-tl-4 rounded-tr-12 rounded-b-12 bg-subtle px-12 py-10">
+        <span class="type-app-label text-tertiary">{t('mock.proposal.comment-author')}</span>
+        <span class="type-app-body text-primary">{t('mock.proposal.comment')}</span>
+      </span>
+    </div>
+    <span class="inline-flex w-full items-center justify-center gap-8 rounded-full bg-brand px-16 py-10 type-label-md text-on-brand">
+      {t('mock.proposal.approve')}
+      <Icon name="pen" class="size-16" />
+    </span>
+  </div>
+</MockupFrame>

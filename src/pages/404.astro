@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import Button from '../components/ui/Button.astro';
+import Logo from '../components/ui/Logo.astro';
+import { useTranslations } from '../i18n';
+
+const es = useTranslations('es');
+const en = useTranslations('en');
+---
+
+<Base locale="es" title={`${es('notfound.title')} · ${es('brand.name')}`} description={es('notfound.text')} noindex>
+  <main
+    id="main"
+    class="flex min-h-dvh flex-col items-center justify-center gap-32 px-page py-section-padding text-center"
+  >
+    <Logo name={es('brand.name')} />
+    <div class="flex max-w-header flex-col gap-16">
+      <h1 class="type-h2 text-primary">{es('notfound.title')}</h1>
+      <p class="type-body-lg text-secondary">{es('notfound.text')}</p>
+      <p class="type-body-md text-tertiary" lang="en">
+        {en('notfound.title')} · {en('notfound.text')}
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-12">
+      <Button size="lg" href="/" icon="arrow-right">
+        {es('notfound.back')}
+      </Button>
+      <Button size="lg" variant="secondary" href="/en/" lang="en">
+        {en('notfound.back')}
+      </Button>
+    </div>
+  </main>
+</Base>

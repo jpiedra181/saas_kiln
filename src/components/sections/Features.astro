@@ -1,0 +1,109 @@
+---
+/**
+ * Funciones: tres bloques texto + mockup (sección "Features" con "Feature content" de Figma).
+ * Escritorio: dos columnas, el bloque de archivos con el mockup a la izquierda.
+ * Tablet y móvil: texto arriba y mockup debajo (variante "Mockup (stacked)" de Figma).
+ */
+import ListItem from '../ui/ListItem.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
+import TextLink from '../ui/TextLink.astro';
+import MockupFiles from '../mockups/MockupFiles.astro';
+import MockupInvoice from '../mockups/MockupInvoice.astro';
+import MockupProposal from '../mockups/MockupProposal.astro';
+import { links, sections } from '../../config/site';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const blocks = [
+  { key: 'proposals', mockup: MockupProposal, reverse: false },
+  { key: 'files', mockup: MockupFiles, reverse: true },
+  { key: 'invoices', mockup: MockupInvoice, reverse: false },
+] as const;
+const bullets = [1, 2, 3] as const;
+---
+
+<section
+  id={sections.features}
+  class="px-page py-section-padding"
+  aria-labelledby="features-title"
+  data-section="features"
+>
+  <div class="mx-auto flex w-full max-w-hero-media flex-col items-center gap-section-gap">
+    <SectionHeader
+      id="features-title"
+      eyebrow={t('features.eyebrow')}
+      title={t('features.title')}
+      subtitle={t('features.subtitle')}
+    />
+
+    <div class="flex w-full flex-col gap-block">
+      {blocks.map(({ key, mockup: Mockup, reverse }) => (
+        <article class:list={['feature-block', reverse && 'feature-block--reverse']} aria-labelledby={`feature-${key}`}>
+          <div class="feature-text flex w-full max-w-feature-text flex-col gap-content">
+            <div class="flex flex-col gap-16">
+              <p class="type-overline text-brand" data-reveal>
+                {t(`features.${key}.eyebrow`)}
+              </p>
+              <h3 id={`feature-${key}`} class="type-h2 text-primary" data-reveal>
+                {t(`features.${key}.title`)}
+              </h3>
+              <p class="type-body-lg text-secondary" data-reveal>
+                {t(`features.${key}.desc`)}
+              </p>
+            </div>
+            <ul class="flex flex-col gap-12">
+              {bullets.map((n) => (
+                <ListItem data-reveal>{t(`features.${key}.bullet-${n}`)}</ListItem>
+              ))}
+            </ul>
+            <div class="flex" data-reveal>
+              <TextLink href={links.signup} icon="arrow-right">
+                {t(`features.${key}.link`)}
+              </TextLink>
+            </div>
+          </div>
+          <div class="feature-media flex w-full justify-center">
+            <Mockup locale={locale} />
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @reference '../../styles/global.css';
+
+  .feature-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--layout-feature-gap);
+
+    @variant lg {
+      display: grid;
+      grid-template-columns: minmax(0, var(--layout-feature-text-width)) minmax(0, var(--layout-feature-media-width));
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .feature-block--reverse {
+    @variant lg {
+      grid-template-columns: minmax(0, var(--layout-feature-media-width)) minmax(0, var(--layout-feature-text-width));
+
+      .feature-text {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .feature-media {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+</style>

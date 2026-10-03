@@ -1,0 +1,63 @@
+---
+/** Mockup de factura con pago online y recordatorio (componente "Mockup/Invoice" de Figma). */
+import Badge from '../ui/Badge.astro';
+import Icon from '../ui/Icon.astro';
+import MockupFrame from './MockupFrame.astro';
+import Toast from './Toast.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const items = [1, 2] as const;
+---
+
+<MockupFrame tone="ember" label={t('a11y.mock-invoice')}>
+  <div class="flex w-full flex-col">
+    <div class="invoice-card mockup-card flex w-full flex-col gap-16 overflow-hidden rounded-20 border border-default bg-surface px-24 pt-24 shadow-lg">
+      <div class="flex items-center justify-between">
+        <span class="flex items-center gap-8 whitespace-nowrap">
+          <span class="type-overline text-brand">{t('mock.invoice.label')}</span>
+          <span class="type-app-label text-tertiary">{t('mock.invoice.number')}</span>
+        </span>
+        <Badge tone="success">{t('app.status.paid')}</Badge>
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="type-h4 text-primary">{t('mock.invoice.client')}</span>
+        <span class="type-app-label text-tertiary">{t('mock.invoice.date')}</span>
+      </div>
+      <span class="border-t border-default"></span>
+      <div class="flex flex-col gap-10">
+        {items.map((n) => (
+          <span class="flex items-center justify-between gap-16 whitespace-nowrap">
+            <span class="type-app-body text-secondary">{t(`mock.invoice.item-${n}`)}</span>
+            <span class="type-app-strong text-right text-primary">{t(`mock.invoice.item-${n}-price`)}</span>
+          </span>
+        ))}
+      </div>
+      <span class="border-t border-default"></span>
+      <div class="flex items-center justify-between gap-16 whitespace-nowrap text-primary">
+        <span class="type-app-strong">{t('mock.invoice.total-label')}</span>
+        <span class="type-numeral text-right">{t('mock.invoice.total')}</span>
+      </div>
+      <span class="inline-flex w-full items-center justify-center gap-8 rounded-full bg-brand px-16 py-10 type-label-md text-on-brand">
+        {t('mock.invoice.pay')}
+        <Icon name="credit-card" class="size-16" />
+      </span>
+      <span class="text-center type-app-label text-tertiary">{t('mock.invoice.methods')}</span>
+    </div>
+    <div class="-mt-28 flex justify-end pr-24" data-mockup-pop>
+      <Toast icon="send" title={t('mock.invoice.toast-title')} meta={t('mock.invoice.toast-meta')} />
+    </div>
+  </div>
+</MockupFrame>
+
+<style>
+  /* En Figma la factura reserva por debajo el hueco del toast que se superpone (24 + 28 px). */
+  .invoice-card {
+    padding-bottom: calc(var(--space-24) + var(--space-28));
+  }
+</style>

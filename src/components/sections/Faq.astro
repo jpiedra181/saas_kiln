@@ -1,0 +1,65 @@
+---
+/** Preguntas frecuentes (sección "FAQ" con "FAQ item" de Figma). La primera pregunta empieza abierta, como en el diseño. */
+import FaqItem from '../controls/FaqItem.astro';
+import TextLink from '../ui/TextLink.astro';
+import { links, sections } from '../../config/site';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const questions = [1, 2, 3, 4, 5] as const;
+---
+
+<section id={sections.faq} class="bg-subtle px-page py-section-padding" aria-labelledby="faq-title" data-section="faq">
+  <div class="faq-layout mx-auto w-full max-w-hero-media">
+    <div class="flex w-full max-w-faq-head flex-col items-start gap-24">
+      <header class="flex w-full flex-col gap-16">
+        <p class="type-overline text-brand" data-reveal>
+          {t('faq.eyebrow')}
+        </p>
+        <h2 id="faq-title" class="type-h2 text-primary" data-reveal>
+          {t('faq.title')}
+        </h2>
+        <p class="type-body-lg text-secondary" data-reveal>
+          {t('faq.subtitle')}
+        </p>
+      </header>
+      <div class="flex" data-reveal>
+        <TextLink href={links.contact} icon="arrow-right">
+          {t('faq.contact')}
+        </TextLink>
+      </div>
+    </div>
+    <div class="flex w-full max-w-faq-list flex-col gap-12">
+      {questions.map((n) => (
+        <div class="flex flex-col" data-reveal>
+          <FaqItem question={t(`faq.q${n}.question`)} open={n === 1}>
+            {t(`faq.q${n}.answer`)}
+          </FaqItem>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @reference '../../styles/global.css';
+
+  .faq-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--layout-section-gap);
+
+    @variant lg {
+      display: grid;
+      grid-template-columns: minmax(0, var(--layout-faq-head-width)) minmax(0, var(--layout-faq-list-width));
+      justify-content: space-between;
+      align-items: start;
+      column-gap: var(--layout-feature-gap);
+    }
+  }
+</style>

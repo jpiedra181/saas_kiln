@@ -1,0 +1,23 @@
+/* Medidas fijas del diseño que en Figma NO son variables: piezas de los mockups y algunos iconos.
+   Es el único archivo con medidas escritas a mano (scripts/check-tokens.ts lo permite solo aquí).
+   Si alguna se convierte en variable en Figma, se borra de este archivo y pasa a generarse. */
+@theme inline {
+  --spacing-icon-md: 1.125rem; /* icono de 18 px (barra lateral, archivos, toasts) */
+  --spacing-icon-wrap: 2.25rem; /* círculo de 36 px de los toasts y los archivos */
+  --spacing-sidebar: 13.75rem; /* barra lateral de la ventana de la app: 220 px */
+  --spacing-col-status: 7rem; /* columnas de la tabla de proyectos: 112 / 88 / 64 px */
+  --spacing-col-amount: 5.5rem;
+  --spacing-col-due: 4rem;
+  --spacing-chrome-spacer: 6.25rem; /* espaciadores de 100 px de la barra del navegador */
+  --spacing-hero-arch: 26.25rem; /* arco del hero: 420 px de alto */
+  --spacing-toast-y: 4.375rem; /* toast del hero: 70 px sobre el borde inferior */
+  --spacing-preview: 11.75rem; /* vista previa del mockup de archivos: 188 px */
+  --spacing-artwork: 4.25rem; /* marca del cliente en la vista previa: 68 px */
+  --spacing-comment: 14.375rem; /* comentario fijado: 230 px */
+  --spacing-cta-arch-l-w: 15rem; /* arcos del CTA: 240×300 y 176×220 px */
+  --spacing-cta-arch-l-h: 18.75rem;
+  --spacing-cta-arch-l-y: 8.4375rem;
+  --spacing-cta-arch-r-w: 11rem;
+  --spacing-cta-arch-r-h: 13.75rem;
+  --spacing-cta-arch-r-y: 6.1875rem;
+}

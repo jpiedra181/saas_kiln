@@ -1,0 +1,33 @@
+---
+/** Fila con marca de verificación (componente "List item" de Figma). */
+import type { HTMLAttributes } from 'astro/types';
+import Icon from './Icon.astro';
+
+interface Props extends HTMLAttributes<'li'> {
+  size?: 'md' | 'sm';
+  tone?: 'default' | 'on-emphasis';
+}
+
+const { size = 'md', tone = 'default', class: className, ...rest } = Astro.props;
+const onEmphasis = tone === 'on-emphasis';
+---
+
+<li class:list={['flex items-start gap-12', className]} {...rest}>
+  <span
+    class:list={[
+      'flex size-20 shrink-0 items-center justify-center rounded-full',
+      onEmphasis ? 'bg-brand icon-on-brand' : 'bg-brand-subtle icon-brand',
+    ]}
+  >
+    <Icon name="check" class="size-12" />
+  </span>
+  <span
+    class:list={[
+      'min-w-0 flex-1',
+      size === 'md' ? 'type-body-md' : 'type-body-sm',
+      onEmphasis ? 'text-on-emphasis' : 'text-primary',
+    ]}
+  >
+    <slot />
+  </span>
+</li>

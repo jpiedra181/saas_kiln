@@ -1,0 +1,25 @@
+---
+/** Botón solo con icono (componente "Icon button" de Figma). Siempre lleva una etiqueta accesible. */
+import type { HTMLAttributes } from 'astro/types';
+import Icon, { type IconName } from './Icon.astro';
+
+interface Props extends HTMLAttributes<'button'> {
+  icon: IconName;
+  label: string;
+}
+
+const { icon, label, class: className, ...rest } = Astro.props;
+---
+
+<button
+  type="button"
+  aria-label={label}
+  class:list={[
+    'focus-ring flex size-40 shrink-0 items-center justify-center rounded-full border border-default bg-surface text-primary transition-colors',
+    'hover:border-strong hover:bg-hover active:bg-pressed',
+    className,
+  ]}
+  {...rest}
+>
+  <Icon name={icon} class="size-20" />
+</button>

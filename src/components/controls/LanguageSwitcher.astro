@@ -1,0 +1,65 @@
+---
+/**
+ * Selector de idioma (componente "Language switcher" de Figma).
+ * Botón que abre una lista con enlaces reales a la misma página en cada idioma.
+ * src/scripts/language.ts gestiona la apertura, Escape, clic fuera y conserva el ancla (#precios…).
+ */
+import Icon from '../ui/Icon.astro';
+import { locales, localizedPath, useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+  id: string;
+  class?: string;
+}
+
+const { locale, id, class: className } = Astro.props;
+const t = useTranslations(locale);
+const path = Astro.url.pathname;
+const listId = `${id}-list`;
+---
+
+<div class:list={['relative', className]} data-lang-switcher>
+  <button
+    type="button"
+    class="focus-ring flex items-center gap-6 rounded-full border border-default px-12 py-8 text-primary transition-colors hover:border-strong hover:bg-hover active:bg-pressed aria-expanded:bg-hover"
+    aria-expanded="false"
+    aria-controls={listId}
+    data-lang-toggle
+  >
+    <Icon name="globe" class="size-16" />
+    <span class="type-label-sm" aria-hidden="true">
+      {t('nav.lang-code')}
+    </span>
+    <span class="sr-only">
+      {t('a11y.lang-change')}: {t('nav.lang-name')}
+    </span>
+    <Icon name="chevron-down" class="size-14 transition-transform [[aria-expanded=true]>&]:rotate-180" />
+  </button>
+  <ul
+    id={listId}
+    class="absolute right-0 top-full z-30 mt-8 min-w-full overflow-hidden rounded-12 border border-default bg-surface-raised p-4 shadow-md"
+    hidden
+    data-lang-list
+  >
+    {locales.map((code) => {
+      const tc = useTranslations(code);
+      const current = code === locale;
+      return (
+        <li class="flex">
+          <a
+            href={localizedPath(path, code)}
+            hreflang={code}
+            lang={code}
+            aria-current={current ? 'true' : undefined}
+            class="flex items-center justify-between gap-16 rounded-8 px-12 py-8 type-label-md whitespace-nowrap text-secondary transition-colors hover:bg-hover hover:text-primary aria-[current=true]:text-primary"
+            data-lang-link
+          >
+            {tc('nav.lang-name')}
+            {current && <Icon name="check" class="size-16 icon-brand" />}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</div>

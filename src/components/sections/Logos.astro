@@ -1,0 +1,31 @@
+---
+/** Franja de logos de clientes (sección "Logos" de Figma). */
+import ClientLogo from '../ui/ClientLogo.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const brands = ['atelier-nord', 'fieldwork', 'paloma', 'oakhouse', 'monoforma', 'linea'] as const;
+---
+
+<section class="px-page py-section-gap" data-section="logos">
+  <div class="mx-auto flex w-full max-w-hero-media flex-col items-center gap-32">
+    <p class="w-full text-center type-label-md text-tertiary" data-reveal>
+      {t('logos.title')}
+    </p>
+    <ul
+      class="flex w-full flex-wrap items-center justify-center gap-x-section-gap gap-y-24"
+      aria-label={t('a11y.logos')}
+    >
+      {brands.map((brand) => (
+        <li data-reveal>
+          <ClientLogo brand={brand} locale={locale} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

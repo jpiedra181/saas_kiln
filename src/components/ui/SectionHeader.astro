@@ -1,0 +1,33 @@
+---
+/** Cabecera de sección (componente "Section header" de Figma): antetítulo, título y subtítulo. */
+interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle?: string;
+  align?: 'center' | 'left';
+  id?: string;
+  class?: string;
+}
+
+const { eyebrow, title, subtitle, align = 'center', id, class: className } = Astro.props;
+---
+
+<header
+  class:list={[
+    'flex w-full flex-col gap-16',
+    align === 'center' ? 'max-w-header items-center text-center' : 'items-start text-left',
+    className,
+  ]}
+>
+  <p class="type-overline text-brand" data-reveal>
+    {eyebrow}
+  </p>
+  <h2 id={id} class="type-h2 text-primary" data-reveal>
+    {title}
+  </h2>
+  {subtitle && (
+    <p class="type-body-lg text-secondary" data-reveal>
+      {subtitle}
+    </p>
+  )}
+</header>

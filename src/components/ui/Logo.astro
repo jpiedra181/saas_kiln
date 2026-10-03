@@ -1,0 +1,32 @@
+---
+/** Logo de Kiln (componente "Logo" de Figma): marca + wordmark. Colores: bg/brand, icon/on-brand y text/primary. */
+import markSvg from '../../assets/brand/logo-mark.svg?raw';
+
+interface Props {
+  class?: string;
+  name?: string;
+}
+
+const { class: className = '', name = 'Kiln' } = Astro.props;
+const mark = markSvg
+  .replace(/\s(id|style)="[^"]*"/g, '')
+  .replace('<svg', '<svg class="logo-mark" aria-hidden="true" focusable="false"');
+---
+
+<span class:list={['inline-flex items-center gap-10', className]}>
+  <Fragment set:html={mark} />
+  <span class="type-logo text-primary">{name}</span>
+</span>
+
+<style>
+  :global(.logo-mark) {
+    display: block;
+    flex-shrink: 0;
+  }
+  :global(.logo-mark path:nth-of-type(1)) {
+    fill: var(--bg-brand);
+  }
+  :global(.logo-mark path:nth-of-type(2)) {
+    fill: var(--icon-on-brand);
+  }
+</style>

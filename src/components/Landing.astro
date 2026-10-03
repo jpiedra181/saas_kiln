@@ -1,0 +1,38 @@
+---
+/** La landing completa en un idioma. Las páginas de / y /en/ solo eligen el idioma. */
+import Base from '../layouts/Base.astro';
+import Cta from './sections/Cta.astro';
+import Faq from './sections/Faq.astro';
+import Features from './sections/Features.astro';
+import Footer from './sections/Footer.astro';
+import Hero from './sections/Hero.astro';
+import HowItWorks from './sections/HowItWorks.astro';
+import Logos from './sections/Logos.astro';
+import Navbar from './sections/Navbar.astro';
+import Pricing from './sections/Pricing.astro';
+import Testimonials from './sections/Testimonials.astro';
+import { useTranslations, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const title = `${t('brand.name')} · ${t('footer.tagline').replace(/\.$/, '')}`;
+---
+
+<Base locale={locale} title={title} description={t('hero.subtitle')}>
+  <Navbar locale={locale} />
+  <main id="main" tabindex="-1" class="outline-none">
+    <Hero locale={locale} />
+    <Logos locale={locale} />
+    <HowItWorks locale={locale} />
+    <Features locale={locale} />
+    <Testimonials locale={locale} />
+    <Pricing locale={locale} />
+    <Faq locale={locale} />
+    <Cta locale={locale} />
+  </main>
+  <Footer locale={locale} />
+</Base>

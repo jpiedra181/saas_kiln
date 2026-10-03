@@ -1,0 +1,62 @@
+---
+/**
+ * Icono de la librería de Figma (src/assets/icons, exportados tal cual).
+ * Se inserta en línea para que herede el color del texto (`currentColor`) en tema claro y oscuro.
+ * Es decorativo por defecto: si transmite información, pásale `label`.
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+const icons = import.meta.glob<string>('../../assets/icons/*.svg', { query: '?raw', import: 'default', eager: true });
+
+export type IconName =
+  | 'arrow-right'
+  | 'badge-check'
+  | 'bell'
+  | 'check'
+  | 'chevron-down'
+  | 'circle-check'
+  | 'circle-play'
+  | 'clock'
+  | 'close'
+  | 'credit-card'
+  | 'file-text'
+  | 'folder'
+  | 'globe'
+  | 'home'
+  | 'image'
+  | 'mail'
+  | 'menu'
+  | 'message'
+  | 'minus'
+  | 'moon'
+  | 'pen'
+  | 'plus'
+  | 'receipt'
+  | 'search'
+  | 'send'
+  | 'sliders'
+  | 'star'
+  | 'sun'
+  | 'trending-up'
+  | 'upload'
+  | 'users';
+
+interface Props extends HTMLAttributes<'svg'> {
+  name: IconName;
+  label?: string;
+}
+
+const { name, label, class: className, ...rest } = Astro.props;
+const raw = icons[`../../assets/icons/${name}.svg`];
+if (!raw) throw new Error(`Icono no encontrado: ${name}`);
+
+// Se quitan los id de las capas de Figma (se repetirían en la página); el dibujo no cambia.
+const svg = raw.replace(/\s(id|style)="[^"]*"/g, '');
+const [, attrs = '', body = ''] = svg.match(/<svg([^>]*)>([\s\S]*)<\/svg>/) ?? [];
+const a11y = label ? `role="img" aria-label="${label}"` : 'aria-hidden="true" focusable="false"';
+const extra = Object.entries(rest)
+  .map(([k, v]) => `${k}="${String(v)}"`)
+  .join(' ');
+---
+
+<Fragment set:html={`<svg${attrs} class="icon ${className ?? ''}" ${a11y} ${extra}>${body}</svg>`} />

@@ -1,0 +1,57 @@
+---
+/**
+ * Botón (componente "Button" de Figma).
+ * Primary = acción principal, Secondary = acción de apoyo, Ghost = acciones discretas o de navegación.
+ * Con `href` se pinta como enlace; sin él, como <button>.
+ */
+import type { HTMLAttributes } from 'astro/types';
+import Icon, { type IconName } from './Icon.astro';
+
+type Variant = 'primary' | 'secondary' | 'ghost';
+type Size = 'md' | 'lg';
+
+interface Props extends Omit<HTMLAttributes<'a'> & HTMLAttributes<'button'>, 'type'> {
+  variant?: Variant;
+  size?: Size;
+  href?: string;
+  icon?: IconName;
+  type?: 'button' | 'submit';
+  block?: boolean;
+}
+
+const {
+  variant = 'primary',
+  size = 'md',
+  href,
+  icon,
+  type = 'button',
+  block = false,
+  class: className,
+  ...rest
+} = Astro.props;
+
+const variants: Record<Variant, string> = {
+  primary: 'bg-brand text-on-brand hover:bg-brand-hover active:bg-brand-pressed',
+  secondary: 'border bg-surface border-strong text-primary hover:bg-hover active:bg-pressed',
+  ghost: 'text-primary hover:bg-hover active:bg-pressed',
+};
+const sizes: Record<Size, string> = {
+  md: 'px-16 py-10 type-label-md',
+  lg: 'px-24 py-14 type-label-lg',
+};
+const classes = [
+  'focus-ring inline-flex items-center justify-center gap-8 rounded-full whitespace-nowrap transition-colors',
+  'disabled:bg-disabled disabled:text-disabled disabled:pointer-events-none',
+  variants[variant],
+  sizes[size],
+  block && 'w-full',
+  className,
+];
+const iconSize = size === 'lg' ? 'size-20' : 'size-16';
+const Tag = href ? 'a' : 'button';
+---
+
+<Tag class:list={classes} href={href} type={href ? undefined : type} {...rest}>
+  <slot />
+  {icon && <Icon name={icon} class={iconSize} />}
+</Tag>

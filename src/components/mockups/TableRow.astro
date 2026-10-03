@@ -1,0 +1,52 @@
+---
+/**
+ * Fila de la tabla de proyectos (componente "Table row" de Figma).
+ * Importe se oculta por debajo de tablet y Entrega por debajo de escritorio (booleanos de Layout).
+ */
+import Avatar, { type AvatarTone } from '../ui/Avatar.astro';
+import Badge, { type BadgeTone } from '../ui/Badge.astro';
+
+type Header = { type: 'header'; project: string; status: string; amount: string; due: string };
+type Row = {
+  type: 'row';
+  project: string;
+  client: string;
+  initials: string;
+  tone: AvatarTone;
+  status: string;
+  statusTone: BadgeTone;
+  amount: string;
+  due: string;
+  last?: boolean;
+};
+type Props = Header | Row;
+
+const props = Astro.props;
+const cell = 'flex shrink-0 items-center overflow-hidden';
+---
+
+{props.type === 'header' ? (
+  <div class="flex items-center gap-16 border-b border-subtle bg-subtle px-16 py-8 type-app-label text-tertiary">
+    <span class="min-w-0 flex-1">{props.project}</span>
+    <span class:list={[cell, 'w-col-status']}>{props.status}</span>
+    <span class:list={[cell, 'w-col-amount justify-end text-right visible-tablet-up']}>{props.amount}</span>
+    <span class:list={[cell, 'w-col-due visible-desktop']}>{props.due}</span>
+  </div>
+) : (
+  <div class:list={['flex items-center gap-16 px-16 py-12', !props.last && 'border-b border-subtle']}>
+    <span class="flex min-w-0 flex-1 items-center gap-10">
+      <Avatar initials={props.initials} tone={props.tone} />
+      <span class="flex min-w-0 flex-1 flex-col">
+        <span class="type-app-strong text-primary">{props.project}</span>
+        <span class="type-app-label text-tertiary">{props.client}</span>
+      </span>
+    </span>
+    <span class:list={[cell, 'w-col-status']}>
+      <Badge tone={props.statusTone}>{props.status}</Badge>
+    </span>
+    <span class:list={[cell, 'w-col-amount justify-end text-right type-app-strong text-primary visible-tablet-up']}>
+      {props.amount}
+    </span>
+    <span class:list={[cell, 'w-col-due type-app-body text-secondary visible-desktop']}>{props.due}</span>
+  </div>
+)}

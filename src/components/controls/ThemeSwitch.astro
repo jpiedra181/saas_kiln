@@ -1,0 +1,47 @@
+---
+/**
+ * Interruptor de tema (componente "Theme switch" de Figma).
+ * Dos botones con aria-pressed; la lógica está en src/scripts/theme.ts.
+ * El estado visual sale de <html data-theme>, que el script del <head> fija antes de pintar: así no parpadea.
+ */
+import Icon from '../ui/Icon.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+  labelledby?: string;
+  class?: string;
+}
+
+const { locale, labelledby, class: className } = Astro.props;
+const t = useTranslations(locale);
+const option =
+  'theme-option focus-ring flex size-32 items-center justify-center rounded-full text-primary transition-colors active:bg-hover';
+---
+
+<div
+  role="group"
+  aria-label={labelledby ? undefined : t('nav.theme-label')}
+  aria-labelledby={labelledby}
+  class:list={[
+    'inline-flex items-center gap-2 rounded-full border border-default bg-muted p-4 transition-colors hover:bg-pressed',
+    className,
+  ]}
+  data-theme-switch
+>
+  <button type="button" class={option} aria-pressed="false" data-theme-value="light" aria-label={t('a11y.theme-light')}>
+    <Icon name="sun" class="size-16" />
+  </button>
+  <button type="button" class={option} aria-pressed="false" data-theme-value="dark" aria-label={t('a11y.theme-dark')}>
+    <Icon name="moon" class="size-16" />
+  </button>
+</div>
+
+<style>
+  @reference '../../styles/global.css';
+
+  :global([data-theme='light']) .theme-option[data-theme-value='light'],
+  :global([data-theme='dark']) .theme-option[data-theme-value='dark'] {
+    @apply bg-surface shadow-sm;
+  }
+</style>

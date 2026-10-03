@@ -1,0 +1,109 @@
+{
+  "$comment": "Altura (px) de cada sección en los frames de Figma, en orden vertical. Las capturas de referencia están en tests/visual/reference/.",
+  "variants": [
+    {
+      "name": "desktop-light-es",
+      "frame": "19:2",
+      "width": 1440,
+      "path": "/",
+      "theme": "light",
+      "sections": {
+        "navbar": 75,
+        "hero": 1393,
+        "logos": 208,
+        "how": 786,
+        "features": 2770,
+        "testimonials": 774,
+        "pricing": 1151,
+        "faq": 718,
+        "cta": 644,
+        "footer": 372
+      }
+    },
+    {
+      "name": "desktop-dark-en",
+      "frame": "20:1471",
+      "width": 1440,
+      "path": "/en/",
+      "theme": "dark",
+      "sections": {
+        "navbar": 75,
+        "hero": 1393,
+        "logos": 208,
+        "how": 786,
+        "features": 2740,
+        "testimonials": 742,
+        "pricing": 1151,
+        "faq": 718,
+        "cta": 644,
+        "footer": 362
+      }
+    },
+    {
+      "name": "tablet-light-es",
+      "frame": "20:2431",
+      "width": 834,
+      "path": "/",
+      "theme": "light",
+      "sections": {
+        "navbar": 73,
+        "hero": 1383,
+        "logos": 244,
+        "how": 778,
+        "features": 3786,
+        "testimonials": 998,
+        "pricing": 2043,
+        "faq": 894,
+        "cta": 542,
+        "footer": 536
+      }
+    },
+    {
+      "name": "mobile-light-es",
+      "frame": "20:3316",
+      "width": 390,
+      "path": "/",
+      "theme": "light",
+      "sections": {
+        "navbar": 73,
+        "hero": 1513,
+        "logos": 284,
+        "how": 1170,
+        "features": 3452,
+        "testimonials": 1154,
+        "pricing": 1965,
+        "faq": 1000,
+        "cta": 494,
+        "footer": 544
+      }
+    },
+    {
+      "name": "mobile-dark-en",
+      "frame": "20:3685",
+      "width": 390,
+      "path": "/en/",
+      "theme": "dark",
+      "sections": {
+        "navbar": 73,
+        "hero": 1479,
+        "logos": 264,
+        "how": 1108,
+        "features": 3446,
+        "testimonials": 1136,
+        "pricing": 1925,
+        "faq": 912,
+        "cta": 494,
+        "footer": 520
+      }
+    }
+  ],
+  "menu": {
+    "name": "mobile-menu-open",
+    "frame": "20:3470",
+    "width": 390,
+    "height": 844,
+    "panelHeight": 525,
+    "path": "/",
+    "theme": "light"
+  }
+}

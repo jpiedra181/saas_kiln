@@ -1,0 +1,177 @@
+---
+/**
+ * Captura del producto del hero (componente "App window" de Figma), construida con componentes y tokens:
+ * cambia con el tema y el idioma. Es una imagen para los lectores de pantalla (role="img" + descripción).
+ * En tablet se ocultan la columna Entrega; en móvil, además, la barra lateral, las acciones, el tercer KPI y el Importe.
+ */
+import Avatar from '../ui/Avatar.astro';
+import Icon from '../ui/Icon.astro';
+import SidebarItem from './SidebarItem.astro';
+import StatCard from './StatCard.astro';
+import TableRow from './TableRow.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+  class?: string;
+}
+
+const { locale, class: className } = Astro.props;
+const t = useTranslations(locale);
+const dots = ['bg-decor-clay', 'bg-decor-ember', 'bg-decor-moss'];
+---
+
+<div
+  role="img"
+  aria-label={t('a11y.hero-mockup')}
+  class:list={['flex w-full flex-col overflow-hidden rounded-20 border border-default bg-surface shadow-lg', className]}
+>
+  <!-- Barra del navegador -->
+  <div class="flex items-center gap-8 border-b border-default bg-subtle px-16 py-12">
+    <span class="flex gap-6">
+      {dots.map((c) => (
+        <span class:list={['size-10 rounded-full', c]} />
+      ))}
+    </span>
+    <span class="h-chrome-spacer min-w-0 flex-1"></span>
+    <span class="flex items-center gap-6 rounded-full border border-default bg-surface px-12 py-4">
+      <Icon name="globe" class="size-12 icon-secondary" />
+      <span class="type-app-label text-tertiary">{t('app.url')}</span>
+    </span>
+    <span class="h-chrome-spacer min-w-0 flex-1"></span>
+    <span class="invisible flex gap-6">
+      {dots.map(() => (
+        <span class="size-10" />
+      ))}
+    </span>
+  </div>
+
+  <div class="flex">
+    <!-- Barra lateral -->
+    <div class="visible-tablet-up w-sidebar shrink-0 flex-col gap-4 self-stretch border-r border-default bg-subtle p-16 md:flex">
+      <span class="flex items-center gap-10 pb-12">
+        <Avatar initials={t('app.workspace-initials')} size="md" tone="clay" />
+        <span class="flex min-w-0 flex-1 flex-col">
+          <span class="type-app-strong text-primary">{t('app.workspace')}</span>
+          <span class="type-app-label text-tertiary">{t('app.workspace-plan')}</span>
+        </span>
+      </span>
+      <span class="flex items-center gap-8 rounded-8 border border-default bg-surface px-10 py-8">
+        <Icon name="search" class="size-14 icon-secondary" />
+        <span class="type-app-body text-tertiary">{t('app.search')}</span>
+      </span>
+      <span class="h-8"></span>
+      <SidebarItem icon="home" active>
+        {t('app.nav.home')}
+      </SidebarItem>
+      <SidebarItem icon="users">{t('app.nav.clients')}</SidebarItem>
+      <SidebarItem icon="file-text">{t('app.nav.proposals')}</SidebarItem>
+      <SidebarItem icon="badge-check">{t('app.nav.approvals')}</SidebarItem>
+      <SidebarItem icon="folder">{t('app.nav.files')}</SidebarItem>
+      <SidebarItem icon="receipt">{t('app.nav.invoices')}</SidebarItem>
+      <span class="min-h-px flex-1"></span>
+      <SidebarItem icon="sliders">{t('app.nav.settings')}</SidebarItem>
+    </div>
+
+    <!-- Contenido -->
+    <div class="flex min-w-0 flex-1 flex-col gap-20 bg-canvas p-24">
+      <div class="flex items-center gap-16">
+        <span class="flex min-w-0 flex-1 flex-col gap-4">
+          <span class="type-app-title text-primary">{t('app.greeting')}</span>
+          <span class="type-app-body text-secondary">{t('app.summary')}</span>
+        </span>
+        <span class="visible-tablet-up flex shrink-0 items-center gap-8">
+          <span class="flex size-40 items-center justify-center rounded-full border border-default bg-surface">
+            <Icon name="bell" class="size-20 icon-primary" />
+          </span>
+          <span class="inline-flex items-center gap-8 rounded-full bg-brand px-16 py-10 type-label-md text-on-brand">
+            {t('app.new-project')}
+            <Icon name="plus" class="size-16" />
+          </span>
+        </span>
+      </div>
+
+      <div class="flex items-start gap-12">
+        <StatCard
+          label={t('app.stat.proposals-label')}
+          value={t('app.stat.proposals-value')}
+          meta={t('app.stat.proposals-meta')}
+        />
+        <StatCard
+          label={t('app.stat.approvals-label')}
+          value={t('app.stat.approvals-value')}
+          meta={t('app.stat.approvals-meta')}
+        />
+        <StatCard
+          class="visible-tablet-up"
+          label={t('app.stat.revenue-label')}
+          value={t('app.stat.revenue-value')}
+          meta={t('app.stat.revenue-meta')}
+          trend
+        />
+      </div>
+
+      <div class="flex flex-col overflow-hidden rounded-12 border border-default bg-surface">
+        <div class="flex items-center justify-between px-16 py-14">
+          <span class="type-app-strong text-primary">{t('app.table.title')}</span>
+          <span class="flex items-center gap-6 type-body-sm text-brand">
+            {t('app.table.view-all')}
+            <Icon name="arrow-right" class="size-14" />
+          </span>
+        </div>
+        <TableRow
+          type="header"
+          project={t('app.table.col-project')}
+          status={t('app.table.col-status')}
+          amount={t('app.table.col-amount')}
+          due={t('app.table.col-due')}
+        />
+        <TableRow
+          type="row"
+          project={t('app.row-1.project')}
+          client={t('app.row-1.client')}
+          initials={t('app.row-1.initials')}
+          tone="clay"
+          status={t('app.status.approved')}
+          statusTone="success"
+          amount={t('app.row-1.amount')}
+          due={t('app.row-1.due')}
+        />
+        <TableRow
+          type="row"
+          project={t('app.row-2.project')}
+          client={t('app.row-2.client')}
+          initials={t('app.row-2.initials')}
+          tone="moss"
+          status={t('app.status.pending')}
+          statusTone="warning"
+          amount={t('app.row-2.amount')}
+          due={t('app.row-2.due')}
+        />
+        <TableRow
+          type="row"
+          project={t('app.row-3.project')}
+          client={t('app.row-3.client')}
+          initials={t('app.row-3.initials')}
+          tone="ember"
+          status={t('app.status.review')}
+          statusTone="neutral"
+          amount={t('app.row-3.amount')}
+          due={t('app.row-3.due')}
+        />
+        <TableRow
+          type="row"
+          project={t('app.row-4.project')}
+          client={t('app.row-4.client')}
+          initials={t('app.row-4.initials')}
+          tone="sand"
+          status={t('app.status.overdue')}
+          statusTone="danger"
+          amount={t('app.row-4.amount')}
+          due={t('app.row-4.due')}
+          last
+        />
+      </div>
+    </div>
+  </div>
+</div>

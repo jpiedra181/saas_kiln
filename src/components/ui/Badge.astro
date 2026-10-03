@@ -1,0 +1,32 @@
+---
+/** Píldora de estado (componente "Badge" de Figma). */
+import type { HTMLAttributes } from 'astro/types';
+
+export type BadgeTone = 'success' | 'warning' | 'danger' | 'neutral' | 'brand';
+
+interface Props extends HTMLAttributes<'span'> {
+  tone?: BadgeTone;
+  dot?: boolean;
+}
+
+const { tone = 'success', dot = true, class: className, ...rest } = Astro.props;
+const tones: Record<BadgeTone, { box: string; dot: string }> = {
+  success: { box: 'bg-status-success text-status-success', dot: 'icon-success' },
+  warning: { box: 'bg-status-warning text-status-warning', dot: 'icon-warning' },
+  danger: { box: 'bg-status-danger text-status-danger', dot: 'icon-danger' },
+  neutral: { box: 'bg-status-neutral text-status-neutral', dot: 'icon-secondary' },
+  brand: { box: 'bg-brand text-on-brand', dot: 'icon-on-brand' },
+};
+---
+
+<span
+  class:list={[
+    'inline-flex items-center gap-6 rounded-full px-10 py-4 type-label-sm whitespace-nowrap',
+    tones[tone].box,
+    className,
+  ]}
+  {...rest}
+>
+  {dot && <span class:list={['size-6 shrink-0 rounded-full bg-current', tones[tone].dot]} aria-hidden="true" />}
+  <slot />
+</span>

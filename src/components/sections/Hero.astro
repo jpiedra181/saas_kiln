@@ -1,0 +1,60 @@
+---
+/** Hero: titular, CTAs y la captura del producto sobre el arco (sección "Hero" de Figma). */
+import Badge from '../ui/Badge.astro';
+import Button from '../ui/Button.astro';
+import AppWindow from '../mockups/AppWindow.astro';
+import Toast from '../mockups/Toast.astro';
+import { links } from '../../config/site';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="px-page py-section-gap" aria-labelledby="hero-title" data-section="hero">
+  <div class="mx-auto flex w-full max-w-hero-media flex-col items-center gap-section-gap">
+    <div class="flex w-full max-w-hero-text flex-col items-center gap-24 text-center">
+      <Badge tone="success" data-hero-item>
+        {t('hero.badge')}
+      </Badge>
+      <h1 id="hero-title" class="type-display w-full text-primary" data-hero-title>
+        {t('hero.title')}
+      </h1>
+      <p class="max-w-header type-body-lg text-secondary" data-hero-item>
+        {t('hero.subtitle')}
+      </p>
+      <div class="flex w-full flex-wrap items-center justify-center gap-12 pt-8" data-hero-item>
+        <Button size="lg" icon="arrow-right" href={links.signup}>
+          {t('hero.cta-primary')}
+        </Button>
+        <Button size="lg" variant="secondary" icon="circle-play" href={links.demo}>
+          {t('hero.cta-secondary')}
+        </Button>
+      </div>
+      <p class="type-body-sm text-tertiary" data-hero-item>
+        {t('hero.note')}
+      </p>
+    </div>
+
+    <div class="relative flex w-full flex-col items-center pt-96" data-hero-media>
+      <div
+        class="absolute top-0 left-1/2 h-hero-arch w-header -translate-x-1/2 rounded-t-full bg-decor-clay-soft"
+        aria-hidden="true"
+        data-hero-arch
+      ></div>
+      <AppWindow locale={locale} class="relative" />
+      <!-- 40 px fuera de la ventana, como en Figma, sin salirse nunca del margen de página. -->
+      <div
+        class="visible-tablet-up absolute bottom-toast-y left-[calc(-1*min(var(--space-40),var(--layout-page-padding)))]"
+        aria-hidden="true"
+        data-hero-toast
+      >
+        <Toast icon="circle-check" title={t('app.toast-title')} meta={t('app.toast-meta')} />
+      </div>
+    </div>
+  </div>
+</section>

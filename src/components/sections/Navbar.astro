@@ -1,0 +1,142 @@
+---
+/**
+ * Navegación (componente "Navbar" de Figma): Desktop en escritorio; Mobile en tablet y móvil.
+ * El menú móvil ("Mobile open") es un <dialog> modal: atrapa el foco, se cierra con Escape
+ * y devuelve el foco al botón que lo abrió (src/scripts/menu.ts).
+ */
+import Button from '../ui/Button.astro';
+import IconButton from '../ui/IconButton.astro';
+import Logo from '../ui/Logo.astro';
+import TextLink from '../ui/TextLink.astro';
+import LanguageSwitcher from '../controls/LanguageSwitcher.astro';
+import ThemeSwitch from '../controls/ThemeSwitch.astro';
+import { links, sections } from '../../config/site';
+import { localizedPath, useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const home = localizedPath('/', locale);
+const navItems = [
+  { href: `#${sections.features}`, label: t('nav.features') },
+  { href: `#${sections.how}`, label: t('nav.how') },
+  { href: `#${sections.pricing}`, label: t('nav.pricing') },
+  { href: `#${sections.faq}`, label: t('nav.faq') },
+];
+---
+
+<header class="border-b border-subtle bg-canvas" data-section="navbar">
+  <div class="mx-auto flex w-full max-w-frame items-center justify-between gap-16 px-page py-16">
+    <a href={home} class="flex rounded-4" aria-label={t('a11y.home')}>
+      <Logo name={t('brand.name')} />
+    </a>
+
+    <!-- Escritorio -->
+    <nav aria-label={t('a11y.nav-main')} class="visible-desktop">
+      <ul class="flex items-center gap-32">
+        {navItems.map((item) => (
+          <li class="flex">
+            <TextLink tone="neutral" href={item.href}>
+              {item.label}
+            </TextLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <div class="visible-desktop flex items-center gap-12">
+      <LanguageSwitcher locale={locale} id="lang-desktop" />
+      <ThemeSwitch locale={locale} />
+      <span class="h-24 border-l border-default" aria-hidden="true"></span>
+      <Button variant="ghost" href={links.login}>
+        {t('nav.login')}
+      </Button>
+      <Button href={links.signup}>{t('nav.cta')}</Button>
+    </div>
+
+    <!-- Tablet y móvil -->
+    <div class="visible-tablet-down flex items-center gap-8">
+      <LanguageSwitcher locale={locale} id="lang-mobile" />
+      <IconButton
+        icon="menu"
+        label={t('a11y.menu-open')}
+        aria-haspopup="dialog"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-open
+      />
+    </div>
+  </div>
+</header>
+
+<dialog id="mobile-menu" class="mobile-menu" aria-label={t('a11y.menu')} data-menu>
+  <div class="menu-panel border-b border-subtle bg-canvas shadow-lg" data-menu-panel>
+    <div class="flex items-center justify-between gap-16 px-page py-16">
+      <a href={home} class="flex rounded-4" aria-label={t('a11y.home')} data-menu-link>
+        <Logo name={t('brand.name')} />
+      </a>
+      <div class="flex items-center gap-8">
+        <LanguageSwitcher locale={locale} id="lang-menu" />
+        <IconButton icon="close" label={t('a11y.menu-close')} data-menu-close />
+      </div>
+    </div>
+    <div class="flex flex-col gap-24 px-page pt-8 pb-24">
+      <nav aria-label={t('a11y.nav-main')}>
+        <ul class="flex flex-col">
+          {navItems.map((item) => (
+            <li class="flex items-center border-b border-subtle py-16" data-menu-item>
+              <TextLink tone="neutral" href={item.href} data-menu-link>
+                {item.label}
+              </TextLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div class="flex flex-wrap items-center justify-between gap-16" data-menu-item>
+        <div class="flex items-center gap-12">
+          <span id="menu-theme-label" class="type-label-md text-secondary">
+            {t('nav.theme-label')}
+          </span>
+          <ThemeSwitch locale={locale} labelledby="menu-theme-label" />
+        </div>
+        <p class="flex items-center gap-12 type-label-md whitespace-nowrap">
+          <span class="text-secondary">{t('nav.lang-label')}</span>
+          <span class="text-primary">{t('nav.lang-name')}</span>
+        </p>
+      </div>
+      <div class="flex flex-col gap-12" data-menu-item>
+        <Button variant="secondary" size="lg" block href={links.login}>
+          {t('nav.login')}
+        </Button>
+        <Button size="lg" block href={links.signup}>
+          {t('nav.cta')}
+        </Button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .mobile-menu {
+    position: fixed;
+    inset: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  .mobile-menu::backdrop {
+    background-color: var(--effect-shadow-strong);
+  }
+  .menu-panel {
+    margin-inline: auto;
+  }
+</style>

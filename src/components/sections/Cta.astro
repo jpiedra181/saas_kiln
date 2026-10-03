@@ -1,0 +1,57 @@
+---
+/** Llamada a la acción final (sección "CTA" de Figma). Los arcos decorativos solo se ven en escritorio. */
+import Button from '../ui/Button.astro';
+import { links } from '../../config/site';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="px-page py-section-padding" aria-labelledby="cta-title" data-section="cta">
+  <div
+    class="cta-panel relative mx-auto flex w-full max-w-hero-media flex-col items-center gap-content overflow-hidden rounded-32 bg-emphasis p-cta"
+    data-cta-panel
+  >
+    <!-- En Figma el texto conserva el ancho de header-width aunque invada el relleno del panel (móvil y tablet). -->
+    <div class="cta-copy relative z-10 flex flex-col items-center">
+      <div class="flex w-full max-w-header flex-col items-center gap-16 text-center">
+        <h2 id="cta-title" class="type-h2 text-on-emphasis" data-reveal>
+          {t('cta.title')}
+        </h2>
+        <p class="type-body-lg text-on-emphasis-secondary" data-reveal>
+          {t('cta.subtitle')}
+        </p>
+      </div>
+    </div>
+    <div class="relative z-10 flex w-full flex-wrap items-center justify-center gap-12" data-reveal>
+      <Button size="lg" icon="arrow-right" href={links.signup}>
+        {t('cta.primary')}
+      </Button>
+      <Button size="lg" variant="secondary" href={links.demo}>
+        {t('cta.secondary')}
+      </Button>
+    </div>
+    <span
+      class="visible-desktop absolute -bottom-cta-arch-l-y -left-48 h-cta-arch-l-h w-cta-arch-l-w rounded-t-full bg-brand"
+      aria-hidden="true"
+      data-cta-arch
+    ></span>
+    <span
+      class="visible-desktop absolute -right-40 -bottom-cta-arch-r-y h-cta-arch-r-h w-cta-arch-r-w rounded-t-full bg-decor-ember"
+      aria-hidden="true"
+      data-cta-arch
+    ></span>
+  </div>
+</section>
+
+<style>
+  .cta-copy {
+    width: calc(100% + 2 * var(--layout-cta-padding));
+    margin-inline: calc(-1 * var(--layout-cta-padding));
+  }
+</style>

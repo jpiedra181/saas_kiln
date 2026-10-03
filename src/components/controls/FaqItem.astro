@@ -1,0 +1,58 @@
+---
+/**
+ * Pregunta del FAQ (componente "FAQ item" de Figma) con <details>/<summary>:
+ * accesible con teclado y lector de pantalla y funciona sin JavaScript.
+ * src/scripts/faq.ts añade la animación de apertura con GSAP.
+ */
+import Icon from '../ui/Icon.astro';
+
+interface Props {
+  question: string;
+  open?: boolean;
+}
+
+const { question, open = false } = Astro.props;
+---
+
+<details
+  class="faq-item group rounded-20 border border-default bg-surface transition-[border-color,box-shadow] hover:border-strong hover:shadow-sm open:border-strong"
+  open={open}
+  data-faq
+>
+  <summary class="flex cursor-pointer list-none items-center gap-16 rounded-20 px-24 py-20 outline-none">
+    <span class="min-w-0 flex-1 type-h4 text-primary">{question}</span>
+    <span
+      class="faq-toggle flex size-32 shrink-0 items-center justify-center rounded-full bg-muted text-primary transition-colors group-hover:bg-brand-subtle group-open:bg-brand group-open:text-on-brand"
+      aria-hidden="true"
+    >
+      <Icon name="plus" class="size-16 group-open:hidden" />
+      <Icon name="minus" class="hidden size-16 group-open:block" />
+    </span>
+  </summary>
+  <div class="faq-answer overflow-hidden" data-faq-answer>
+    <p class="px-24 pb-20 type-body-md text-secondary">
+      <slot />
+    </p>
+  </div>
+</details>
+
+<style>
+  @reference '../../styles/global.css';
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  /* El foco del summary se dibuja en toda la tarjeta, como el estado Focus de Figma. */
+  .faq-item:has(summary:focus-visible) {
+    outline: 2px solid var(--border-focus);
+    outline-offset: -2px;
+    box-shadow: var(--focus-ring-halo);
+  }
+  .faq-item[open] .faq-toggle {
+    @apply group-hover:bg-brand;
+  }
+  /* En Figma la respuesta va 12 px debajo de la pregunta: el summary conserva su relleno inferior y aquí se compensa. */
+  .faq-answer p {
+    margin-top: calc(var(--space-12) - var(--space-20));
+  }
+</style>

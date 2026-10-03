@@ -1,0 +1,7252 @@
+{
+  "meta": {
+    "fileName": "kiln",
+    "exporter": "figma/export-tokens.js",
+    "exportedAt": "2026-10-03T05:05:11.256Z",
+    "fileKey": "alzYXnsPzEWTUOX02Xn3Mf"
+  },
+  "collections": [
+    {
+      "name": "Primitives",
+      "modes": [
+        "Value"
+      ],
+      "defaultMode": "Value"
+    },
+    {
+      "name": "Theme",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "defaultMode": "Light"
+    },
+    {
+      "name": "Language",
+      "modes": [
+        "ES",
+        "EN"
+      ],
+      "defaultMode": "ES"
+    },
+    {
+      "name": "Layout",
+      "modes": [
+        "Desktop 1440",
+        "Tablet 834",
+        "Mobile 390"
+      ],
+      "defaultMode": "Desktop 1440"
+    }
+  ],
+  "variables": [
+    {
+      "name": "color/clay/50",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-50)",
+      "values": {
+        "Value": "#fbf0ea"
+      }
+    },
+    {
+      "name": "color/clay/100",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-100)",
+      "values": {
+        "Value": "#f6dfd3"
+      }
+    },
+    {
+      "name": "color/clay/200",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-200)",
+      "values": {
+        "Value": "#edbfa8"
+      }
+    },
+    {
+      "name": "color/clay/300",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-300)",
+      "values": {
+        "Value": "#e29a7a"
+      }
+    },
+    {
+      "name": "color/clay/400",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-400)",
+      "values": {
+        "Value": "#d47552"
+      }
+    },
+    {
+      "name": "color/clay/500",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-500)",
+      "values": {
+        "Value": "#c2583a"
+      }
+    },
+    {
+      "name": "color/clay/600",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-600)",
+      "values": {
+        "Value": "#a8452c"
+      }
+    },
+    {
+      "name": "color/clay/700",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-700)",
+      "values": {
+        "Value": "#8a3725"
+      }
+    },
+    {
+      "name": "color/clay/800",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-800)",
+      "values": {
+        "Value": "#6b2c20"
+      }
+    },
+    {
+      "name": "color/clay/900",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-900)",
+      "values": {
+        "Value": "#4b2018"
+      }
+    },
+    {
+      "name": "color/clay/950",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--clay-950)",
+      "values": {
+        "Value": "#2e1510"
+      }
+    },
+    {
+      "name": "color/sand/0",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-0)",
+      "values": {
+        "Value": "#fffdf9"
+      }
+    },
+    {
+      "name": "color/sand/50",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-50)",
+      "values": {
+        "Value": "#faf6ef"
+      }
+    },
+    {
+      "name": "color/sand/100",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-100)",
+      "values": {
+        "Value": "#f3ece1"
+      }
+    },
+    {
+      "name": "color/sand/200",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-200)",
+      "values": {
+        "Value": "#e8dfd1"
+      }
+    },
+    {
+      "name": "color/sand/300",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-300)",
+      "values": {
+        "Value": "#d7cab7"
+      }
+    },
+    {
+      "name": "color/sand/400",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-400)",
+      "values": {
+        "Value": "#b5a58f"
+      }
+    },
+    {
+      "name": "color/sand/500",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-500)",
+      "values": {
+        "Value": "#8e7f6b"
+      }
+    },
+    {
+      "name": "color/sand/600",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-600)",
+      "values": {
+        "Value": "#6c5f4f"
+      }
+    },
+    {
+      "name": "color/sand/700",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-700)",
+      "values": {
+        "Value": "#4e443a"
+      }
+    },
+    {
+      "name": "color/sand/800",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-800)",
+      "values": {
+        "Value": "#352e27"
+      }
+    },
+    {
+      "name": "color/sand/900",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-900)",
+      "values": {
+        "Value": "#252019"
+      }
+    },
+    {
+      "name": "color/sand/925",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-925)",
+      "values": {
+        "Value": "#1d1914"
+      }
+    },
+    {
+      "name": "color/sand/950",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-950)",
+      "values": {
+        "Value": "#15120e"
+      }
+    },
+    {
+      "name": "color/moss/50",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-50)",
+      "values": {
+        "Value": "#f1f4ec"
+      }
+    },
+    {
+      "name": "color/moss/100",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-100)",
+      "values": {
+        "Value": "#e0e8d6"
+      }
+    },
+    {
+      "name": "color/moss/200",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-200)",
+      "values": {
+        "Value": "#c3d1b2"
+      }
+    },
+    {
+      "name": "color/moss/300",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-300)",
+      "values": {
+        "Value": "#a0b48a"
+      }
+    },
+    {
+      "name": "color/moss/400",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-400)",
+      "values": {
+        "Value": "#7f9768"
+      }
+    },
+    {
+      "name": "color/moss/500",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-500)",
+      "values": {
+        "Value": "#627c4d"
+      }
+    },
+    {
+      "name": "color/moss/600",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-600)",
+      "values": {
+        "Value": "#4c633c"
+      }
+    },
+    {
+      "name": "color/moss/700",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-700)",
+      "values": {
+        "Value": "#3b4d30"
+      }
+    },
+    {
+      "name": "color/moss/800",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-800)",
+      "values": {
+        "Value": "#2d3b25"
+      }
+    },
+    {
+      "name": "color/moss/900",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-900)",
+      "values": {
+        "Value": "#20291b"
+      }
+    },
+    {
+      "name": "color/moss/950",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--moss-950)",
+      "values": {
+        "Value": "#141a11"
+      }
+    },
+    {
+      "name": "color/ember/50",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-50)",
+      "values": {
+        "Value": "#fdf6e6"
+      }
+    },
+    {
+      "name": "color/ember/100",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-100)",
+      "values": {
+        "Value": "#faeac2"
+      }
+    },
+    {
+      "name": "color/ember/200",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-200)",
+      "values": {
+        "Value": "#f5d48a"
+      }
+    },
+    {
+      "name": "color/ember/300",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-300)",
+      "values": {
+        "Value": "#edbb55"
+      }
+    },
+    {
+      "name": "color/ember/400",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-400)",
+      "values": {
+        "Value": "#e0a12f"
+      }
+    },
+    {
+      "name": "color/ember/500",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-500)",
+      "values": {
+        "Value": "#c6861b"
+      }
+    },
+    {
+      "name": "color/ember/600",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-600)",
+      "values": {
+        "Value": "#a06a13"
+      }
+    },
+    {
+      "name": "color/ember/700",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-700)",
+      "values": {
+        "Value": "#7b5011"
+      }
+    },
+    {
+      "name": "color/ember/800",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-800)",
+      "values": {
+        "Value": "#5b3b0f"
+      }
+    },
+    {
+      "name": "color/ember/900",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-900)",
+      "values": {
+        "Value": "#3e290c"
+      }
+    },
+    {
+      "name": "color/ember/950",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--ember-950)",
+      "values": {
+        "Value": "#261908"
+      }
+    },
+    {
+      "name": "color/alpha/ink-8",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-ink-8)",
+      "values": {
+        "Value": "#25201914"
+      }
+    },
+    {
+      "name": "color/alpha/ink-16",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-ink-16)",
+      "values": {
+        "Value": "#25201929"
+      }
+    },
+    {
+      "name": "color/alpha/black-40",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-black-40)",
+      "values": {
+        "Value": "#00000066"
+      }
+    },
+    {
+      "name": "color/alpha/black-60",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-black-60)",
+      "values": {
+        "Value": "#00000099"
+      }
+    },
+    {
+      "name": "color/alpha/clay-32",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-clay-32)",
+      "values": {
+        "Value": "#c2583a52"
+      }
+    },
+    {
+      "name": "color/alpha/clay-light-40",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--alpha-clay-light-40)",
+      "values": {
+        "Value": "#e29a7a66"
+      }
+    },
+    {
+      "name": "space/0",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-0)",
+      "values": {
+        "Value": 0
+      }
+    },
+    {
+      "name": "space/2",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-2)",
+      "values": {
+        "Value": 2
+      }
+    },
+    {
+      "name": "space/4",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-4)",
+      "values": {
+        "Value": 4
+      }
+    },
+    {
+      "name": "space/6",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-6)",
+      "values": {
+        "Value": 6
+      }
+    },
+    {
+      "name": "space/8",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-8)",
+      "values": {
+        "Value": 8
+      }
+    },
+    {
+      "name": "space/10",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-10)",
+      "values": {
+        "Value": 10
+      }
+    },
+    {
+      "name": "space/12",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-12)",
+      "values": {
+        "Value": 12
+      }
+    },
+    {
+      "name": "space/14",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-14)",
+      "values": {
+        "Value": 14
+      }
+    },
+    {
+      "name": "space/16",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-16)",
+      "values": {
+        "Value": 16
+      }
+    },
+    {
+      "name": "space/20",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-20)",
+      "values": {
+        "Value": 20
+      }
+    },
+    {
+      "name": "space/24",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-24)",
+      "values": {
+        "Value": 24
+      }
+    },
+    {
+      "name": "space/28",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-28)",
+      "values": {
+        "Value": 28
+      }
+    },
+    {
+      "name": "space/32",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-32)",
+      "values": {
+        "Value": 32
+      }
+    },
+    {
+      "name": "space/40",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-40)",
+      "values": {
+        "Value": 40
+      }
+    },
+    {
+      "name": "space/48",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-48)",
+      "values": {
+        "Value": 48
+      }
+    },
+    {
+      "name": "space/56",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-56)",
+      "values": {
+        "Value": 56
+      }
+    },
+    {
+      "name": "space/64",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-64)",
+      "values": {
+        "Value": 64
+      }
+    },
+    {
+      "name": "space/72",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-72)",
+      "values": {
+        "Value": 72
+      }
+    },
+    {
+      "name": "space/80",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-80)",
+      "values": {
+        "Value": 80
+      }
+    },
+    {
+      "name": "space/96",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-96)",
+      "values": {
+        "Value": 96
+      }
+    },
+    {
+      "name": "space/120",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-120)",
+      "values": {
+        "Value": 120
+      }
+    },
+    {
+      "name": "space/144",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-144)",
+      "values": {
+        "Value": 144
+      }
+    },
+    {
+      "name": "space/160",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--space-160)",
+      "values": {
+        "Value": 160
+      }
+    },
+    {
+      "name": "radius/0",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-0)",
+      "values": {
+        "Value": 0
+      }
+    },
+    {
+      "name": "radius/4",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-4)",
+      "values": {
+        "Value": 4
+      }
+    },
+    {
+      "name": "radius/6",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-6)",
+      "values": {
+        "Value": 6
+      }
+    },
+    {
+      "name": "radius/8",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-8)",
+      "values": {
+        "Value": 8
+      }
+    },
+    {
+      "name": "radius/12",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-12)",
+      "values": {
+        "Value": 12
+      }
+    },
+    {
+      "name": "radius/16",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-16)",
+      "values": {
+        "Value": 16
+      }
+    },
+    {
+      "name": "radius/20",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-20)",
+      "values": {
+        "Value": 20
+      }
+    },
+    {
+      "name": "radius/24",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-24)",
+      "values": {
+        "Value": 24
+      }
+    },
+    {
+      "name": "radius/32",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-32)",
+      "values": {
+        "Value": 32
+      }
+    },
+    {
+      "name": "radius/full",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "CORNER_RADIUS"
+      ],
+      "codeSyntax": "var(--radius-full)",
+      "values": {
+        "Value": 9999
+      }
+    },
+    {
+      "name": "font/family/display",
+      "collection": "Primitives",
+      "type": "STRING",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "codeSyntax": "var(--font-display)",
+      "values": {
+        "Value": "Fraunces"
+      }
+    },
+    {
+      "name": "font/family/body",
+      "collection": "Primitives",
+      "type": "STRING",
+      "scopes": [
+        "FONT_FAMILY"
+      ],
+      "codeSyntax": "var(--font-body)",
+      "values": {
+        "Value": "Instrument Sans"
+      }
+    },
+    {
+      "name": "font/size/12",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-12)",
+      "values": {
+        "Value": 12
+      }
+    },
+    {
+      "name": "font/size/13",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-13)",
+      "values": {
+        "Value": 13
+      }
+    },
+    {
+      "name": "font/size/14",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-14)",
+      "values": {
+        "Value": 14
+      }
+    },
+    {
+      "name": "font/size/15",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-15)",
+      "values": {
+        "Value": 15
+      }
+    },
+    {
+      "name": "font/size/16",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-16)",
+      "values": {
+        "Value": 16
+      }
+    },
+    {
+      "name": "font/size/17",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-17)",
+      "values": {
+        "Value": 17
+      }
+    },
+    {
+      "name": "font/size/18",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-18)",
+      "values": {
+        "Value": 18
+      }
+    },
+    {
+      "name": "font/size/20",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-20)",
+      "values": {
+        "Value": 20
+      }
+    },
+    {
+      "name": "font/size/22",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-22)",
+      "values": {
+        "Value": 22
+      }
+    },
+    {
+      "name": "font/size/24",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-24)",
+      "values": {
+        "Value": 24
+      }
+    },
+    {
+      "name": "font/size/26",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-26)",
+      "values": {
+        "Value": 26
+      }
+    },
+    {
+      "name": "font/size/28",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-28)",
+      "values": {
+        "Value": 28
+      }
+    },
+    {
+      "name": "font/size/32",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-32)",
+      "values": {
+        "Value": 32
+      }
+    },
+    {
+      "name": "font/size/40",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-40)",
+      "values": {
+        "Value": 40
+      }
+    },
+    {
+      "name": "font/size/48",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-48)",
+      "values": {
+        "Value": 48
+      }
+    },
+    {
+      "name": "font/size/56",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-56)",
+      "values": {
+        "Value": 56
+      }
+    },
+    {
+      "name": "font/size/72",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--font-size-72)",
+      "values": {
+        "Value": 72
+      }
+    },
+    {
+      "name": "font/line-height/16",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-16)",
+      "values": {
+        "Value": 16
+      }
+    },
+    {
+      "name": "font/line-height/18",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-18)",
+      "values": {
+        "Value": 18
+      }
+    },
+    {
+      "name": "font/line-height/20",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-20)",
+      "values": {
+        "Value": 20
+      }
+    },
+    {
+      "name": "font/line-height/22",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-22)",
+      "values": {
+        "Value": 22
+      }
+    },
+    {
+      "name": "font/line-height/24",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-24)",
+      "values": {
+        "Value": 24
+      }
+    },
+    {
+      "name": "font/line-height/26",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-26)",
+      "values": {
+        "Value": 26
+      }
+    },
+    {
+      "name": "font/line-height/28",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-28)",
+      "values": {
+        "Value": 28
+      }
+    },
+    {
+      "name": "font/line-height/30",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-30)",
+      "values": {
+        "Value": 30
+      }
+    },
+    {
+      "name": "font/line-height/32",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-32)",
+      "values": {
+        "Value": 32
+      }
+    },
+    {
+      "name": "font/line-height/36",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-36)",
+      "values": {
+        "Value": 36
+      }
+    },
+    {
+      "name": "font/line-height/38",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-38)",
+      "values": {
+        "Value": 38
+      }
+    },
+    {
+      "name": "font/line-height/40",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-40)",
+      "values": {
+        "Value": 40
+      }
+    },
+    {
+      "name": "font/line-height/44",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-44)",
+      "values": {
+        "Value": 44
+      }
+    },
+    {
+      "name": "font/line-height/48",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-48)",
+      "values": {
+        "Value": 48
+      }
+    },
+    {
+      "name": "font/line-height/52",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-52)",
+      "values": {
+        "Value": 52
+      }
+    },
+    {
+      "name": "font/line-height/56",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-56)",
+      "values": {
+        "Value": 56
+      }
+    },
+    {
+      "name": "font/line-height/60",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-60)",
+      "values": {
+        "Value": 60
+      }
+    },
+    {
+      "name": "font/line-height/76",
+      "collection": "Primitives",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--line-height-76)",
+      "values": {
+        "Value": 76
+      }
+    },
+    {
+      "name": "color/sand/550",
+      "collection": "Primitives",
+      "type": "COLOR",
+      "scopes": [],
+      "codeSyntax": "var(--sand-550)",
+      "values": {
+        "Value": "#766957"
+      }
+    },
+    {
+      "name": "bg/canvas",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-canvas)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/50"
+        },
+        "Dark": {
+          "alias": "color/sand/950"
+        }
+      }
+    },
+    {
+      "name": "bg/subtle",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-subtle)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/100"
+        },
+        "Dark": {
+          "alias": "color/sand/925"
+        }
+      }
+    },
+    {
+      "name": "bg/surface",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-surface)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/0"
+        },
+        "Dark": {
+          "alias": "color/sand/900"
+        }
+      }
+    },
+    {
+      "name": "bg/surface-raised",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-surface-raised)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/0"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "bg/muted",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-muted)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/100"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "bg/hover",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-hover)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/100"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "bg/pressed",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-pressed)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/200"
+        },
+        "Dark": {
+          "alias": "color/sand/700"
+        }
+      }
+    },
+    {
+      "name": "bg/emphasis",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-emphasis)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/900"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "bg/brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/600"
+        },
+        "Dark": {
+          "alias": "color/clay/400"
+        }
+      }
+    },
+    {
+      "name": "bg/brand-hover",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-brand-hover)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/700"
+        },
+        "Dark": {
+          "alias": "color/clay/300"
+        }
+      }
+    },
+    {
+      "name": "bg/brand-pressed",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-brand-pressed)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/800"
+        },
+        "Dark": {
+          "alias": "color/clay/500"
+        }
+      }
+    },
+    {
+      "name": "bg/brand-subtle",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-brand-subtle)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/50"
+        },
+        "Dark": {
+          "alias": "color/clay/950"
+        }
+      }
+    },
+    {
+      "name": "bg/accent-subtle",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-accent-subtle)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/50"
+        },
+        "Dark": {
+          "alias": "color/moss/950"
+        }
+      }
+    },
+    {
+      "name": "bg/warning-subtle",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-warning-subtle)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/50"
+        },
+        "Dark": {
+          "alias": "color/ember/950"
+        }
+      }
+    },
+    {
+      "name": "bg/disabled",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-disabled)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/200"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "bg/toggle-off",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-toggle-off)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/500"
+        },
+        "Dark": {
+          "alias": "color/sand/500"
+        }
+      }
+    },
+    {
+      "name": "bg/toggle-off-hover",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-toggle-off-hover)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/600"
+        },
+        "Dark": {
+          "alias": "color/sand/400"
+        }
+      }
+    },
+    {
+      "name": "bg/knob",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--bg-knob)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/0"
+        },
+        "Dark": {
+          "alias": "color/sand/50"
+        }
+      }
+    },
+    {
+      "name": "text/primary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-primary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/900"
+        },
+        "Dark": {
+          "alias": "color/sand/50"
+        }
+      }
+    },
+    {
+      "name": "text/secondary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-secondary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/600"
+        },
+        "Dark": {
+          "alias": "color/sand/300"
+        }
+      }
+    },
+    {
+      "name": "text/tertiary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-tertiary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/550"
+        },
+        "Dark": {
+          "alias": "color/sand/400"
+        }
+      }
+    },
+    {
+      "name": "text/disabled",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-disabled)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/400"
+        },
+        "Dark": {
+          "alias": "color/sand/600"
+        }
+      }
+    },
+    {
+      "name": "text/brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/600"
+        },
+        "Dark": {
+          "alias": "color/clay/300"
+        }
+      }
+    },
+    {
+      "name": "text/brand-hover",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-brand-hover)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/800"
+        },
+        "Dark": {
+          "alias": "color/clay/200"
+        }
+      }
+    },
+    {
+      "name": "text/on-brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-on-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/0"
+        },
+        "Dark": {
+          "alias": "color/sand/950"
+        }
+      }
+    },
+    {
+      "name": "text/on-emphasis",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-on-emphasis)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/50"
+        },
+        "Dark": {
+          "alias": "color/sand/50"
+        }
+      }
+    },
+    {
+      "name": "text/on-emphasis-secondary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-on-emphasis-secondary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/300"
+        },
+        "Dark": {
+          "alias": "color/sand/300"
+        }
+      }
+    },
+    {
+      "name": "text/success",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-success)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/700"
+        },
+        "Dark": {
+          "alias": "color/moss/200"
+        }
+      }
+    },
+    {
+      "name": "text/warning",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-warning)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/700"
+        },
+        "Dark": {
+          "alias": "color/ember/200"
+        }
+      }
+    },
+    {
+      "name": "text/danger",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--text-danger)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/700"
+        },
+        "Dark": {
+          "alias": "color/clay/200"
+        }
+      }
+    },
+    {
+      "name": "border/subtle",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-subtle)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/100"
+        },
+        "Dark": {
+          "alias": "color/sand/900"
+        }
+      }
+    },
+    {
+      "name": "border/default",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-default)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/200"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "border/strong",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-strong)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/300"
+        },
+        "Dark": {
+          "alias": "color/sand/700"
+        }
+      }
+    },
+    {
+      "name": "border/brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/600"
+        },
+        "Dark": {
+          "alias": "color/clay/400"
+        }
+      }
+    },
+    {
+      "name": "border/focus",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-focus)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/500"
+        },
+        "Dark": {
+          "alias": "color/clay/300"
+        }
+      }
+    },
+    {
+      "name": "border/on-emphasis",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--border-on-emphasis)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/700"
+        },
+        "Dark": {
+          "alias": "color/sand/700"
+        }
+      }
+    },
+    {
+      "name": "icon/primary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-primary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/900"
+        },
+        "Dark": {
+          "alias": "color/sand/50"
+        }
+      }
+    },
+    {
+      "name": "icon/secondary",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-secondary)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/500"
+        },
+        "Dark": {
+          "alias": "color/sand/400"
+        }
+      }
+    },
+    {
+      "name": "icon/brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/600"
+        },
+        "Dark": {
+          "alias": "color/clay/300"
+        }
+      }
+    },
+    {
+      "name": "icon/on-brand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-on-brand)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/0"
+        },
+        "Dark": {
+          "alias": "color/sand/950"
+        }
+      }
+    },
+    {
+      "name": "icon/on-emphasis",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-on-emphasis)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/50"
+        },
+        "Dark": {
+          "alias": "color/sand/50"
+        }
+      }
+    },
+    {
+      "name": "icon/success",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-success)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/600"
+        },
+        "Dark": {
+          "alias": "color/moss/300"
+        }
+      }
+    },
+    {
+      "name": "icon/warning",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-warning)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/500"
+        },
+        "Dark": {
+          "alias": "color/ember/300"
+        }
+      }
+    },
+    {
+      "name": "icon/danger",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-danger)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/600"
+        },
+        "Dark": {
+          "alias": "color/clay/300"
+        }
+      }
+    },
+    {
+      "name": "icon/disabled",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "SHAPE_FILL",
+        "STROKE_COLOR"
+      ],
+      "codeSyntax": "var(--icon-disabled)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/400"
+        },
+        "Dark": {
+          "alias": "color/sand/600"
+        }
+      }
+    },
+    {
+      "name": "status/success-bg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--status-success-bg)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/100"
+        },
+        "Dark": {
+          "alias": "color/moss/900"
+        }
+      }
+    },
+    {
+      "name": "status/success-fg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--status-success-fg)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/700"
+        },
+        "Dark": {
+          "alias": "color/moss/200"
+        }
+      }
+    },
+    {
+      "name": "status/warning-bg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--status-warning-bg)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/100"
+        },
+        "Dark": {
+          "alias": "color/ember/900"
+        }
+      }
+    },
+    {
+      "name": "status/warning-fg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--status-warning-fg)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/700"
+        },
+        "Dark": {
+          "alias": "color/ember/200"
+        }
+      }
+    },
+    {
+      "name": "status/danger-bg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--status-danger-bg)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/100"
+        },
+        "Dark": {
+          "alias": "color/clay/900"
+        }
+      }
+    },
+    {
+      "name": "status/danger-fg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--status-danger-fg)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/700"
+        },
+        "Dark": {
+          "alias": "color/clay/200"
+        }
+      }
+    },
+    {
+      "name": "status/neutral-bg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--status-neutral-bg)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/100"
+        },
+        "Dark": {
+          "alias": "color/sand/800"
+        }
+      }
+    },
+    {
+      "name": "status/neutral-fg",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "TEXT_FILL"
+      ],
+      "codeSyntax": "var(--status-neutral-fg)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/600"
+        },
+        "Dark": {
+          "alias": "color/sand/300"
+        }
+      }
+    },
+    {
+      "name": "decor/clay",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-clay)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/300"
+        },
+        "Dark": {
+          "alias": "color/clay/500"
+        }
+      }
+    },
+    {
+      "name": "decor/moss",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-moss)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/300"
+        },
+        "Dark": {
+          "alias": "color/moss/500"
+        }
+      }
+    },
+    {
+      "name": "decor/ember",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-ember)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/300"
+        },
+        "Dark": {
+          "alias": "color/ember/500"
+        }
+      }
+    },
+    {
+      "name": "decor/sand",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-sand)",
+      "values": {
+        "Light": {
+          "alias": "color/sand/300"
+        },
+        "Dark": {
+          "alias": "color/sand/600"
+        }
+      }
+    },
+    {
+      "name": "decor/clay-soft",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-clay-soft)",
+      "values": {
+        "Light": {
+          "alias": "color/clay/100"
+        },
+        "Dark": {
+          "alias": "color/clay/900"
+        }
+      }
+    },
+    {
+      "name": "decor/moss-soft",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-moss-soft)",
+      "values": {
+        "Light": {
+          "alias": "color/moss/100"
+        },
+        "Dark": {
+          "alias": "color/moss/900"
+        }
+      }
+    },
+    {
+      "name": "decor/ember-soft",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "FRAME_FILL",
+        "SHAPE_FILL"
+      ],
+      "codeSyntax": "var(--decor-ember-soft)",
+      "values": {
+        "Light": {
+          "alias": "color/ember/100"
+        },
+        "Dark": {
+          "alias": "color/ember/900"
+        }
+      }
+    },
+    {
+      "name": "effect/shadow-soft",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--effect-shadow-soft)",
+      "values": {
+        "Light": {
+          "alias": "color/alpha/ink-8"
+        },
+        "Dark": {
+          "alias": "color/alpha/black-40"
+        }
+      }
+    },
+    {
+      "name": "effect/shadow-strong",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--effect-shadow-strong)",
+      "values": {
+        "Light": {
+          "alias": "color/alpha/ink-16"
+        },
+        "Dark": {
+          "alias": "color/alpha/black-60"
+        }
+      }
+    },
+    {
+      "name": "effect/focus-ring",
+      "collection": "Theme",
+      "type": "COLOR",
+      "scopes": [
+        "EFFECT_COLOR"
+      ],
+      "codeSyntax": "var(--effect-focus-ring)",
+      "values": {
+        "Light": {
+          "alias": "color/alpha/clay-32"
+        },
+        "Dark": {
+          "alias": "color/alpha/clay-light-40"
+        }
+      }
+    },
+    {
+      "name": "brand/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('brand.name')",
+      "values": {
+        "ES": "Kiln",
+        "EN": "Kiln"
+      }
+    },
+    {
+      "name": "brand/domain",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('brand.domain')",
+      "values": {
+        "ES": "kiln.app",
+        "EN": "kiln.app"
+      }
+    },
+    {
+      "name": "nav/features",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.features')",
+      "values": {
+        "ES": "Funciones",
+        "EN": "Features"
+      }
+    },
+    {
+      "name": "nav/how",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.how')",
+      "values": {
+        "ES": "Cómo funciona",
+        "EN": "How it works"
+      }
+    },
+    {
+      "name": "nav/pricing",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.pricing')",
+      "values": {
+        "ES": "Precios",
+        "EN": "Pricing"
+      }
+    },
+    {
+      "name": "nav/faq",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.faq')",
+      "values": {
+        "ES": "Preguntas",
+        "EN": "FAQ"
+      }
+    },
+    {
+      "name": "nav/login",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.login')",
+      "values": {
+        "ES": "Iniciar sesión",
+        "EN": "Log in"
+      }
+    },
+    {
+      "name": "nav/cta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.cta')",
+      "values": {
+        "ES": "Empieza gratis",
+        "EN": "Start free"
+      }
+    },
+    {
+      "name": "nav/lang-code",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.lang-code')",
+      "values": {
+        "ES": "ES",
+        "EN": "EN"
+      }
+    },
+    {
+      "name": "nav/lang-name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.lang-name')",
+      "values": {
+        "ES": "Español",
+        "EN": "English"
+      }
+    },
+    {
+      "name": "nav/lang-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.lang-label')",
+      "values": {
+        "ES": "Idioma",
+        "EN": "Language"
+      }
+    },
+    {
+      "name": "nav/theme-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('nav.theme-label')",
+      "values": {
+        "ES": "Tema",
+        "EN": "Theme"
+      }
+    },
+    {
+      "name": "hero/badge",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.badge')",
+      "values": {
+        "ES": "Nuevo · Firma de propuestas integrada",
+        "EN": "New · Built-in proposal e-signing"
+      }
+    },
+    {
+      "name": "hero/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.title')",
+      "values": {
+        "ES": "Deja de perseguir correos. Empieza a diseñar.",
+        "EN": "Stop chasing emails. Start designing."
+      }
+    },
+    {
+      "name": "hero/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.subtitle')",
+      "values": {
+        "ES": "Kiln reúne propuestas, aprobaciones, archivos y facturas en un portal con tu marca. Tus clientes saben qué hacer; tú dejas de hacer de cartero.",
+        "EN": "Kiln brings proposals, approvals, files and invoices into one branded portal. Clients always know what to do next, and you stop playing postman."
+      }
+    },
+    {
+      "name": "hero/cta-primary",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.cta-primary')",
+      "values": {
+        "ES": "Empieza gratis",
+        "EN": "Start for free"
+      }
+    },
+    {
+      "name": "hero/cta-secondary",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.cta-secondary')",
+      "values": {
+        "ES": "Ver demo de 2 min",
+        "EN": "Watch the 2-min demo"
+      }
+    },
+    {
+      "name": "hero/note",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('hero.note')",
+      "values": {
+        "ES": "Gratis para tus 3 primeros clientes · Sin tarjeta",
+        "EN": "Free for your first 3 clients · No card needed"
+      }
+    },
+    {
+      "name": "app/url",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.url')",
+      "values": {
+        "ES": "estudiolumbre.kiln.app",
+        "EN": "estudiolumbre.kiln.app"
+      }
+    },
+    {
+      "name": "app/workspace",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.workspace')",
+      "values": {
+        "ES": "Estudio Lumbre",
+        "EN": "Estudio Lumbre"
+      }
+    },
+    {
+      "name": "app/workspace-plan",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.workspace-plan')",
+      "values": {
+        "ES": "Plan Estudio",
+        "EN": "Studio plan"
+      }
+    },
+    {
+      "name": "app/search",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.search')",
+      "values": {
+        "ES": "Buscar…",
+        "EN": "Search…"
+      }
+    },
+    {
+      "name": "app/nav/home",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.home')",
+      "values": {
+        "ES": "Inicio",
+        "EN": "Home"
+      }
+    },
+    {
+      "name": "app/nav/clients",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.clients')",
+      "values": {
+        "ES": "Clientes",
+        "EN": "Clients"
+      }
+    },
+    {
+      "name": "app/nav/proposals",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.proposals')",
+      "values": {
+        "ES": "Propuestas",
+        "EN": "Proposals"
+      }
+    },
+    {
+      "name": "app/nav/approvals",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.approvals')",
+      "values": {
+        "ES": "Aprobaciones",
+        "EN": "Approvals"
+      }
+    },
+    {
+      "name": "app/nav/files",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.files')",
+      "values": {
+        "ES": "Archivos",
+        "EN": "Files"
+      }
+    },
+    {
+      "name": "app/nav/invoices",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.invoices')",
+      "values": {
+        "ES": "Facturas",
+        "EN": "Invoices"
+      }
+    },
+    {
+      "name": "app/nav/settings",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.nav.settings')",
+      "values": {
+        "ES": "Ajustes",
+        "EN": "Settings"
+      }
+    },
+    {
+      "name": "app/greeting",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.greeting')",
+      "values": {
+        "ES": "Buenos días, Lucía",
+        "EN": "Good morning, Lucía"
+      }
+    },
+    {
+      "name": "app/summary",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.summary')",
+      "values": {
+        "ES": "Tienes 3 aprobaciones pendientes y 1 factura vencida.",
+        "EN": "You have 3 approvals pending and 1 overdue invoice."
+      }
+    },
+    {
+      "name": "app/new-project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.new-project')",
+      "values": {
+        "ES": "Nuevo proyecto",
+        "EN": "New project"
+      }
+    },
+    {
+      "name": "app/stat/proposals-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.proposals-label')",
+      "values": {
+        "ES": "Propuestas abiertas",
+        "EN": "Open proposals"
+      }
+    },
+    {
+      "name": "app/stat/proposals-value",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.proposals-value')",
+      "values": {
+        "ES": "8",
+        "EN": "8"
+      }
+    },
+    {
+      "name": "app/stat/proposals-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.proposals-meta')",
+      "values": {
+        "ES": "2 enviadas hoy",
+        "EN": "2 sent today"
+      }
+    },
+    {
+      "name": "app/stat/approvals-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.approvals-label')",
+      "values": {
+        "ES": "Esperando aprobación",
+        "EN": "Awaiting approval"
+      }
+    },
+    {
+      "name": "app/stat/approvals-value",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.approvals-value')",
+      "values": {
+        "ES": "3",
+        "EN": "3"
+      }
+    },
+    {
+      "name": "app/stat/approvals-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.approvals-meta')",
+      "values": {
+        "ES": "Respuesta media: 1,4 días",
+        "EN": "Avg. response: 1.4 days"
+      }
+    },
+    {
+      "name": "app/stat/revenue-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.revenue-label')",
+      "values": {
+        "ES": "Cobrado en septiembre",
+        "EN": "Collected in September"
+      }
+    },
+    {
+      "name": "app/stat/revenue-value",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.revenue-value')",
+      "values": {
+        "ES": "12.480 €",
+        "EN": "€12,480"
+      }
+    },
+    {
+      "name": "app/stat/revenue-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.stat.revenue-meta')",
+      "values": {
+        "ES": "+18% vs. agosto",
+        "EN": "+18% vs. August"
+      }
+    },
+    {
+      "name": "app/table/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.title')",
+      "values": {
+        "ES": "Proyectos activos",
+        "EN": "Active projects"
+      }
+    },
+    {
+      "name": "app/table/view-all",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.view-all')",
+      "values": {
+        "ES": "Ver todos",
+        "EN": "View all"
+      }
+    },
+    {
+      "name": "app/table/col-project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.col-project')",
+      "values": {
+        "ES": "Proyecto",
+        "EN": "Project"
+      }
+    },
+    {
+      "name": "app/table/col-client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.col-client')",
+      "values": {
+        "ES": "Cliente",
+        "EN": "Client"
+      }
+    },
+    {
+      "name": "app/table/col-status",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.col-status')",
+      "values": {
+        "ES": "Estado",
+        "EN": "Status"
+      }
+    },
+    {
+      "name": "app/table/col-amount",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.col-amount')",
+      "values": {
+        "ES": "Importe",
+        "EN": "Amount"
+      }
+    },
+    {
+      "name": "app/table/col-due",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.table.col-due')",
+      "values": {
+        "ES": "Entrega",
+        "EN": "Due"
+      }
+    },
+    {
+      "name": "app/row-1/project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-1.project')",
+      "values": {
+        "ES": "Rebranding Nórdica",
+        "EN": "Nórdica rebrand"
+      }
+    },
+    {
+      "name": "app/row-1/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-1.client')",
+      "values": {
+        "ES": "Café Nórdica",
+        "EN": "Café Nórdica"
+      }
+    },
+    {
+      "name": "app/row-1/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-1.initials')",
+      "values": {
+        "ES": "CN",
+        "EN": "CN"
+      }
+    },
+    {
+      "name": "app/row-1/amount",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-1.amount')",
+      "values": {
+        "ES": "4.200 €",
+        "EN": "€4,200"
+      }
+    },
+    {
+      "name": "app/row-1/due",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-1.due')",
+      "values": {
+        "ES": "12 oct",
+        "EN": "Oct 12"
+      }
+    },
+    {
+      "name": "app/row-2/project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-2.project')",
+      "values": {
+        "ES": "Web de Verdeluz",
+        "EN": "Verdeluz website"
+      }
+    },
+    {
+      "name": "app/row-2/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-2.client')",
+      "values": {
+        "ES": "Verdeluz Hotels",
+        "EN": "Verdeluz Hotels"
+      }
+    },
+    {
+      "name": "app/row-2/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-2.initials')",
+      "values": {
+        "ES": "VH",
+        "EN": "VH"
+      }
+    },
+    {
+      "name": "app/row-2/amount",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-2.amount')",
+      "values": {
+        "ES": "6.800 €",
+        "EN": "€6,800"
+      }
+    },
+    {
+      "name": "app/row-2/due",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-2.due')",
+      "values": {
+        "ES": "28 oct",
+        "EN": "Oct 28"
+      }
+    },
+    {
+      "name": "app/row-3/project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-3.project')",
+      "values": {
+        "ES": "Packaging Olivar",
+        "EN": "Olivar packaging"
+      }
+    },
+    {
+      "name": "app/row-3/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-3.client')",
+      "values": {
+        "ES": "Olivar & Co.",
+        "EN": "Olivar & Co."
+      }
+    },
+    {
+      "name": "app/row-3/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-3.initials')",
+      "values": {
+        "ES": "OC",
+        "EN": "OC"
+      }
+    },
+    {
+      "name": "app/row-3/amount",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-3.amount')",
+      "values": {
+        "ES": "2.950 €",
+        "EN": "€2,950"
+      }
+    },
+    {
+      "name": "app/row-3/due",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-3.due')",
+      "values": {
+        "ES": "3 nov",
+        "EN": "Nov 3"
+      }
+    },
+    {
+      "name": "app/row-4/project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-4.project')",
+      "values": {
+        "ES": "Identidad Brisa",
+        "EN": "Brisa identity"
+      }
+    },
+    {
+      "name": "app/row-4/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-4.client')",
+      "values": {
+        "ES": "Brisa Surf",
+        "EN": "Brisa Surf"
+      }
+    },
+    {
+      "name": "app/row-4/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-4.initials')",
+      "values": {
+        "ES": "BS",
+        "EN": "BS"
+      }
+    },
+    {
+      "name": "app/row-4/amount",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-4.amount')",
+      "values": {
+        "ES": "1.750 €",
+        "EN": "€1,750"
+      }
+    },
+    {
+      "name": "app/row-4/due",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.row-4.due')",
+      "values": {
+        "ES": "30 sep",
+        "EN": "Sep 30"
+      }
+    },
+    {
+      "name": "app/status/approved",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.approved')",
+      "values": {
+        "ES": "Aprobado",
+        "EN": "Approved"
+      }
+    },
+    {
+      "name": "app/status/pending",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.pending')",
+      "values": {
+        "ES": "Pendiente",
+        "EN": "Pending"
+      }
+    },
+    {
+      "name": "app/status/review",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.review')",
+      "values": {
+        "ES": "En revisión",
+        "EN": "In review"
+      }
+    },
+    {
+      "name": "app/status/overdue",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.overdue')",
+      "values": {
+        "ES": "Vencida",
+        "EN": "Overdue"
+      }
+    },
+    {
+      "name": "app/status/paid",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.paid')",
+      "values": {
+        "ES": "Pagada",
+        "EN": "Paid"
+      }
+    },
+    {
+      "name": "app/status/draft",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.status.draft')",
+      "values": {
+        "ES": "Borrador",
+        "EN": "Draft"
+      }
+    },
+    {
+      "name": "app/toast-title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.toast-title')",
+      "values": {
+        "ES": "Café Nórdica aprobó la propuesta",
+        "EN": "Café Nórdica approved the proposal"
+      }
+    },
+    {
+      "name": "app/toast-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.toast-meta')",
+      "values": {
+        "ES": "Hace 2 min · Rebranding Nórdica",
+        "EN": "2 min ago · Nórdica rebrand"
+      }
+    },
+    {
+      "name": "app/user-name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.user-name')",
+      "values": {
+        "ES": "Lucía Ferrer",
+        "EN": "Lucía Ferrer"
+      }
+    },
+    {
+      "name": "app/user-initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.user-initials')",
+      "values": {
+        "ES": "LF",
+        "EN": "LF"
+      }
+    },
+    {
+      "name": "logos/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.title')",
+      "values": {
+        "ES": "Más de 1.200 estudios independientes ya trabajan con Kiln",
+        "EN": "Trusted by 1,200+ independent design studios"
+      }
+    },
+    {
+      "name": "logos/atelier-nord",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.atelier-nord')",
+      "values": {
+        "ES": "Atelier Nord",
+        "EN": "Atelier Nord"
+      }
+    },
+    {
+      "name": "logos/fieldwork",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.fieldwork')",
+      "values": {
+        "ES": "FIELDWORK",
+        "EN": "FIELDWORK"
+      }
+    },
+    {
+      "name": "logos/paloma",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.paloma')",
+      "values": {
+        "ES": "Paloma",
+        "EN": "Paloma"
+      }
+    },
+    {
+      "name": "logos/oakhouse",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.oakhouse')",
+      "values": {
+        "ES": "Oakhouse",
+        "EN": "Oakhouse"
+      }
+    },
+    {
+      "name": "logos/monoforma",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.monoforma')",
+      "values": {
+        "ES": "monoforma",
+        "EN": "monoforma"
+      }
+    },
+    {
+      "name": "logos/linea",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('logos.linea')",
+      "values": {
+        "ES": "Linea Studio",
+        "EN": "Linea Studio"
+      }
+    },
+    {
+      "name": "how/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.eyebrow')",
+      "values": {
+        "ES": "Cómo funciona",
+        "EN": "How it works"
+      }
+    },
+    {
+      "name": "how/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.title')",
+      "values": {
+        "ES": "Del primer correo a la factura pagada, en tres pasos",
+        "EN": "From first email to paid invoice in three steps"
+      }
+    },
+    {
+      "name": "how/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.subtitle')",
+      "values": {
+        "ES": "Configura tu portal en una tarde. Tus clientes no necesitan contraseña ni formación.",
+        "EN": "Set up your portal in an afternoon. Your clients need no password and no training."
+      }
+    },
+    {
+      "name": "how/step-1/number",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-1.number')",
+      "values": {
+        "ES": "01",
+        "EN": "01"
+      }
+    },
+    {
+      "name": "how/step-1/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-1.title')",
+      "values": {
+        "ES": "Invita a tu cliente",
+        "EN": "Invite your client"
+      }
+    },
+    {
+      "name": "how/step-1/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-1.desc')",
+      "values": {
+        "ES": "Crea un espacio por proyecto con tu logo y tus colores. Tu cliente entra con un enlace mágico, sin contraseñas.",
+        "EN": "Create a space per project with your logo and colours. Clients join with a magic link, no passwords involved."
+      }
+    },
+    {
+      "name": "how/step-2/number",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-2.number')",
+      "values": {
+        "ES": "02",
+        "EN": "02"
+      }
+    },
+    {
+      "name": "how/step-2/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-2.title')",
+      "values": {
+        "ES": "Comparte y aprueba",
+        "EN": "Share and get sign-off"
+      }
+    },
+    {
+      "name": "how/step-2/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-2.desc')",
+      "values": {
+        "ES": "Sube propuestas, diseños y entregables. Cada versión queda registrada y el cliente aprueba con un clic.",
+        "EN": "Upload proposals, designs and deliverables. Every version is tracked and clients approve in a single click."
+      }
+    },
+    {
+      "name": "how/step-3/number",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-3.number')",
+      "values": {
+        "ES": "03",
+        "EN": "03"
+      }
+    },
+    {
+      "name": "how/step-3/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-3.title')",
+      "values": {
+        "ES": "Factura y cobra",
+        "EN": "Invoice and get paid"
+      }
+    },
+    {
+      "name": "how/step-3/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('how.step-3.desc')",
+      "values": {
+        "ES": "Convierte la propuesta aprobada en factura y cobra con tarjeta o transferencia. Kiln envía los recordatorios por ti.",
+        "EN": "Turn the approved proposal into an invoice and get paid by card or transfer. Kiln sends the reminders for you."
+      }
+    },
+    {
+      "name": "features/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.eyebrow')",
+      "values": {
+        "ES": "Funciones",
+        "EN": "Features"
+      }
+    },
+    {
+      "name": "features/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.title')",
+      "values": {
+        "ES": "Todo lo que hoy vive en tu bandeja de entrada",
+        "EN": "Everything that lives in your inbox today"
+      }
+    },
+    {
+      "name": "features/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.subtitle')",
+      "values": {
+        "ES": "Propuestas, aprobaciones, archivos y facturas conectados en un mismo flujo, con tu marca.",
+        "EN": "Proposals, approvals, files and invoices connected in one branded flow."
+      }
+    },
+    {
+      "name": "features/proposals/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.eyebrow')",
+      "values": {
+        "ES": "Propuestas y aprobaciones",
+        "EN": "Proposals & approvals"
+      }
+    },
+    {
+      "name": "features/proposals/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.title')",
+      "values": {
+        "ES": "Aprobaciones claras, sin «¿lo has visto?»",
+        "EN": "Clear sign-offs, no more “did you see it?”"
+      }
+    },
+    {
+      "name": "features/proposals/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.desc')",
+      "values": {
+        "ES": "Envía propuestas interactivas con alcance, plazos y precio. Tu cliente comenta, elige opciones y firma desde el móvil.",
+        "EN": "Send interactive proposals with scope, timeline and price. Clients comment, pick options and sign from their phone."
+      }
+    },
+    {
+      "name": "features/proposals/bullet-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.bullet-1')",
+      "values": {
+        "ES": "Firma electrónica incluida",
+        "EN": "Built-in e-signature"
+      }
+    },
+    {
+      "name": "features/proposals/bullet-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.bullet-2')",
+      "values": {
+        "ES": "Historial de versiones y comentarios",
+        "EN": "Version history and comments"
+      }
+    },
+    {
+      "name": "features/proposals/bullet-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.bullet-3')",
+      "values": {
+        "ES": "Recordatorios automáticos",
+        "EN": "Automatic reminders"
+      }
+    },
+    {
+      "name": "features/proposals/link",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.proposals.link')",
+      "values": {
+        "ES": "Ver propuestas",
+        "EN": "Explore proposals"
+      }
+    },
+    {
+      "name": "features/files/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.eyebrow')",
+      "values": {
+        "ES": "Archivos y entregas",
+        "EN": "Files & handoff"
+      }
+    },
+    {
+      "name": "features/files/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.title')",
+      "values": {
+        "ES": "Un único lugar para cada versión",
+        "EN": "One home for every version"
+      }
+    },
+    {
+      "name": "features/files/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.desc')",
+      "values": {
+        "ES": "Adiós a «final_v7_DEFINITIVO.pdf». Kiln ordena los archivos por proyecto y muestra siempre la última versión aprobada.",
+        "EN": "Goodbye “final_v7_REALLY.pdf”. Kiln organises files by project and always surfaces the latest approved version."
+      }
+    },
+    {
+      "name": "features/files/bullet-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.bullet-1')",
+      "values": {
+        "ES": "Previsualiza PDF, Figma e imágenes",
+        "EN": "Preview PDFs, Figma files and images"
+      }
+    },
+    {
+      "name": "features/files/bullet-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.bullet-2')",
+      "values": {
+        "ES": "Comentarios sobre el propio diseño",
+        "EN": "Comments pinned on the design"
+      }
+    },
+    {
+      "name": "features/files/bullet-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.bullet-3')",
+      "values": {
+        "ES": "Entrega final con un solo enlace",
+        "EN": "Final handoff in a single link"
+      }
+    },
+    {
+      "name": "features/files/link",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.files.link')",
+      "values": {
+        "ES": "Ver archivos",
+        "EN": "Explore files"
+      }
+    },
+    {
+      "name": "features/invoices/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.eyebrow')",
+      "values": {
+        "ES": "Facturas y pagos",
+        "EN": "Invoices & payments"
+      }
+    },
+    {
+      "name": "features/invoices/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.title')",
+      "values": {
+        "ES": "Cobra a tiempo sin incomodar a nadie",
+        "EN": "Get paid on time without the awkward chase"
+      }
+    },
+    {
+      "name": "features/invoices/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.desc')",
+      "values": {
+        "ES": "Genera facturas desde la propuesta aprobada, acepta pagos online y deja que Kiln recuerde los vencimientos con tu tono.",
+        "EN": "Generate invoices from the approved proposal, accept online payments and let Kiln nudge late payers in your own voice."
+      }
+    },
+    {
+      "name": "features/invoices/bullet-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.bullet-1')",
+      "values": {
+        "ES": "Pagos con tarjeta, SEPA y Bizum",
+        "EN": "Card, SEPA and bank transfer"
+      }
+    },
+    {
+      "name": "features/invoices/bullet-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.bullet-2')",
+      "values": {
+        "ES": "Facturas recurrentes y por hitos",
+        "EN": "Recurring and milestone billing"
+      }
+    },
+    {
+      "name": "features/invoices/bullet-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.bullet-3')",
+      "values": {
+        "ES": "Exportación para tu gestoría",
+        "EN": "Export ready for your accountant"
+      }
+    },
+    {
+      "name": "features/invoices/link",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('features.invoices.link')",
+      "values": {
+        "ES": "Ver facturación",
+        "EN": "Explore invoicing"
+      }
+    },
+    {
+      "name": "mock/proposal/label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.label')",
+      "values": {
+        "ES": "Propuesta",
+        "EN": "Proposal"
+      }
+    },
+    {
+      "name": "mock/proposal/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.title')",
+      "values": {
+        "ES": "Rebranding Nórdica",
+        "EN": "Nórdica rebrand"
+      }
+    },
+    {
+      "name": "mock/proposal/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.client')",
+      "values": {
+        "ES": "Para Café Nórdica · Válida hasta el 20 oct",
+        "EN": "For Café Nórdica · Valid until Oct 20"
+      }
+    },
+    {
+      "name": "mock/proposal/scope",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.scope')",
+      "values": {
+        "ES": "Alcance",
+        "EN": "Scope"
+      }
+    },
+    {
+      "name": "mock/proposal/item-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-1')",
+      "values": {
+        "ES": "Estrategia de marca",
+        "EN": "Brand strategy"
+      }
+    },
+    {
+      "name": "mock/proposal/item-1-price",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-1-price')",
+      "values": {
+        "ES": "1.200 €",
+        "EN": "€1,200"
+      }
+    },
+    {
+      "name": "mock/proposal/item-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-2')",
+      "values": {
+        "ES": "Identidad visual",
+        "EN": "Visual identity"
+      }
+    },
+    {
+      "name": "mock/proposal/item-2-price",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-2-price')",
+      "values": {
+        "ES": "2.200 €",
+        "EN": "€2,200"
+      }
+    },
+    {
+      "name": "mock/proposal/item-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-3')",
+      "values": {
+        "ES": "Manual de marca",
+        "EN": "Brand guidelines"
+      }
+    },
+    {
+      "name": "mock/proposal/item-3-price",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.item-3-price')",
+      "values": {
+        "ES": "800 €",
+        "EN": "€800"
+      }
+    },
+    {
+      "name": "mock/proposal/total-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.total-label')",
+      "values": {
+        "ES": "Total",
+        "EN": "Total"
+      }
+    },
+    {
+      "name": "mock/proposal/total",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.total')",
+      "values": {
+        "ES": "4.200 €",
+        "EN": "€4,200"
+      }
+    },
+    {
+      "name": "mock/proposal/approve",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.approve')",
+      "values": {
+        "ES": "Aprobar y firmar",
+        "EN": "Approve & sign"
+      }
+    },
+    {
+      "name": "mock/proposal/comment-author",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.comment-author')",
+      "values": {
+        "ES": "Marta · Café Nórdica",
+        "EN": "Marta · Café Nórdica"
+      }
+    },
+    {
+      "name": "mock/proposal/comment-initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.comment-initials')",
+      "values": {
+        "ES": "MC",
+        "EN": "MC"
+      }
+    },
+    {
+      "name": "mock/proposal/comment",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.proposal.comment')",
+      "values": {
+        "ES": "¡Nos encanta! Adelante con la opción B.",
+        "EN": "We love it! Let’s go with option B."
+      }
+    },
+    {
+      "name": "mock/files/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.title')",
+      "values": {
+        "ES": "Archivos",
+        "EN": "Files"
+      }
+    },
+    {
+      "name": "mock/files/project",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.project')",
+      "values": {
+        "ES": "Rebranding Nórdica",
+        "EN": "Nórdica rebrand"
+      }
+    },
+    {
+      "name": "mock/files/upload",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.upload')",
+      "values": {
+        "ES": "Subir",
+        "EN": "Upload"
+      }
+    },
+    {
+      "name": "mock/files/latest",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.latest')",
+      "values": {
+        "ES": "Última versión",
+        "EN": "Latest"
+      }
+    },
+    {
+      "name": "mock/files/file-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-1')",
+      "values": {
+        "ES": "Logo_Nordica_v3.fig",
+        "EN": "Logo_Nordica_v3.fig"
+      }
+    },
+    {
+      "name": "mock/files/file-1-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-1-meta')",
+      "values": {
+        "ES": "Figma · 12 MB · hace 1 h",
+        "EN": "Figma · 12 MB · 1 h ago"
+      }
+    },
+    {
+      "name": "mock/files/file-1-version",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-1-version')",
+      "values": {
+        "ES": "v3",
+        "EN": "v3"
+      }
+    },
+    {
+      "name": "mock/files/file-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-2')",
+      "values": {
+        "ES": "Guia_de_marca.pdf",
+        "EN": "Brand_guidelines.pdf"
+      }
+    },
+    {
+      "name": "mock/files/file-2-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-2-meta')",
+      "values": {
+        "ES": "PDF · 4,2 MB · ayer",
+        "EN": "PDF · 4.2 MB · yesterday"
+      }
+    },
+    {
+      "name": "mock/files/file-2-version",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-2-version')",
+      "values": {
+        "ES": "v2",
+        "EN": "v2"
+      }
+    },
+    {
+      "name": "mock/files/file-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-3')",
+      "values": {
+        "ES": "Fotografia_local.zip",
+        "EN": "Shop_photography.zip"
+      }
+    },
+    {
+      "name": "mock/files/file-3-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-3-meta')",
+      "values": {
+        "ES": "ZIP · 86 MB · 3 oct",
+        "EN": "ZIP · 86 MB · Oct 3"
+      }
+    },
+    {
+      "name": "mock/files/file-3-version",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.file-3-version')",
+      "values": {
+        "ES": "v1",
+        "EN": "v1"
+      }
+    },
+    {
+      "name": "mock/files/comment-author",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.comment-author')",
+      "values": {
+        "ES": "Marta",
+        "EN": "Marta"
+      }
+    },
+    {
+      "name": "mock/files/comment",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.files.comment')",
+      "values": {
+        "ES": "¿Probamos un tono más cálido en el isotipo?",
+        "EN": "Can we try a warmer tone on the mark?"
+      }
+    },
+    {
+      "name": "mock/invoice/label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.label')",
+      "values": {
+        "ES": "Factura",
+        "EN": "Invoice"
+      }
+    },
+    {
+      "name": "mock/invoice/number",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.number')",
+      "values": {
+        "ES": "Nº 2026-018",
+        "EN": "No. 2026-018"
+      }
+    },
+    {
+      "name": "mock/invoice/client",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.client')",
+      "values": {
+        "ES": "Verdeluz Hotels",
+        "EN": "Verdeluz Hotels"
+      }
+    },
+    {
+      "name": "mock/invoice/date",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.date')",
+      "values": {
+        "ES": "Emitida el 1 oct · Vence el 15 oct",
+        "EN": "Issued Oct 1 · Due Oct 15"
+      }
+    },
+    {
+      "name": "mock/invoice/item-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.item-1')",
+      "values": {
+        "ES": "Diseño web · Hito 2",
+        "EN": "Web design · Milestone 2"
+      }
+    },
+    {
+      "name": "mock/invoice/item-1-price",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.item-1-price')",
+      "values": {
+        "ES": "4.800 €",
+        "EN": "€4,800"
+      }
+    },
+    {
+      "name": "mock/invoice/item-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.item-2')",
+      "values": {
+        "ES": "Desarrollo de plantillas",
+        "EN": "Template development"
+      }
+    },
+    {
+      "name": "mock/invoice/item-2-price",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.item-2-price')",
+      "values": {
+        "ES": "2.000 €",
+        "EN": "€2,000"
+      }
+    },
+    {
+      "name": "mock/invoice/total-label",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.total-label')",
+      "values": {
+        "ES": "Total",
+        "EN": "Total"
+      }
+    },
+    {
+      "name": "mock/invoice/total",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.total')",
+      "values": {
+        "ES": "6.800 €",
+        "EN": "€6,800"
+      }
+    },
+    {
+      "name": "mock/invoice/pay",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.pay')",
+      "values": {
+        "ES": "Pagar ahora",
+        "EN": "Pay now"
+      }
+    },
+    {
+      "name": "mock/invoice/methods",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.methods')",
+      "values": {
+        "ES": "Tarjeta · SEPA · Bizum",
+        "EN": "Card · SEPA · Bank transfer"
+      }
+    },
+    {
+      "name": "mock/invoice/toast-title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.toast-title')",
+      "values": {
+        "ES": "Recordatorio enviado",
+        "EN": "Reminder sent"
+      }
+    },
+    {
+      "name": "mock/invoice/toast-meta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('mock.invoice.toast-meta')",
+      "values": {
+        "ES": "Brisa Surf · Factura Nº 2026-015",
+        "EN": "Brisa Surf · Invoice No. 2026-015"
+      }
+    },
+    {
+      "name": "testimonials/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.eyebrow')",
+      "values": {
+        "ES": "Testimonios",
+        "EN": "Testimonials"
+      }
+    },
+    {
+      "name": "testimonials/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.title')",
+      "values": {
+        "ES": "Ya no persiguen a nadie",
+        "EN": "Studios that stopped chasing"
+      }
+    },
+    {
+      "name": "testimonials/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.subtitle')",
+      "values": {
+        "ES": "Equipos pequeños, clientes exigentes y muchos menos correos.",
+        "EN": "Small teams, demanding clients and far fewer emails."
+      }
+    },
+    {
+      "name": "testimonials/t1/quote",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t1.quote')",
+      "values": {
+        "ES": "«Antes perdíamos medio día a la semana buscando aprobaciones en hilos de correo. Con Kiln, el cliente sabe exactamente qué tiene que revisar.»",
+        "EN": "“We used to lose half a day a week digging approvals out of email threads. With Kiln, clients know exactly what to review.”"
+      }
+    },
+    {
+      "name": "testimonials/t1/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t1.name')",
+      "values": {
+        "ES": "Lucía Ferrer",
+        "EN": "Lucía Ferrer"
+      }
+    },
+    {
+      "name": "testimonials/t1/role",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t1.role')",
+      "values": {
+        "ES": "Fundadora, Estudio Lumbre",
+        "EN": "Founder, Estudio Lumbre"
+      }
+    },
+    {
+      "name": "testimonials/t1/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t1.initials')",
+      "values": {
+        "ES": "LF",
+        "EN": "LF"
+      }
+    },
+    {
+      "name": "testimonials/t2/quote",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t2.quote')",
+      "values": {
+        "ES": "«Cobramos las facturas 12 días antes de media. Los recordatorios suenan como nosotros, no como un robot.»",
+        "EN": "“We get paid 12 days faster on average. The reminders sound like us, not like a robot.”"
+      }
+    },
+    {
+      "name": "testimonials/t2/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t2.name')",
+      "values": {
+        "ES": "Tomás Aguirre",
+        "EN": "Tomás Aguirre"
+      }
+    },
+    {
+      "name": "testimonials/t2/role",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t2.role')",
+      "values": {
+        "ES": "Socio, Fieldwork",
+        "EN": "Partner, Fieldwork"
+      }
+    },
+    {
+      "name": "testimonials/t2/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t2.initials')",
+      "values": {
+        "ES": "TA",
+        "EN": "TA"
+      }
+    },
+    {
+      "name": "testimonials/t3/quote",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t3.quote')",
+      "values": {
+        "ES": "«Mis clientes lo usan sin que les explique nada. Parece una extensión de mi marca, no otra herramienta más.»",
+        "EN": "“My clients use it without any onboarding. It feels like an extension of my brand, not yet another tool.”"
+      }
+    },
+    {
+      "name": "testimonials/t3/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t3.name')",
+      "values": {
+        "ES": "Inés Montoya",
+        "EN": "Inés Montoya"
+      }
+    },
+    {
+      "name": "testimonials/t3/role",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t3.role')",
+      "values": {
+        "ES": "Diseñadora independiente",
+        "EN": "Independent designer"
+      }
+    },
+    {
+      "name": "testimonials/t3/initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('testimonials.t3.initials')",
+      "values": {
+        "ES": "IM",
+        "EN": "IM"
+      }
+    },
+    {
+      "name": "pricing/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.eyebrow')",
+      "values": {
+        "ES": "Precios",
+        "EN": "Pricing"
+      }
+    },
+    {
+      "name": "pricing/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.title')",
+      "values": {
+        "ES": "Precios sencillos que crecen con tu estudio",
+        "EN": "Simple pricing that grows with your studio"
+      }
+    },
+    {
+      "name": "pricing/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.subtitle')",
+      "values": {
+        "ES": "Empieza gratis. Cambia de plan o cancela cuando quieras.",
+        "EN": "Start free. Upgrade, downgrade or cancel anytime."
+      }
+    },
+    {
+      "name": "pricing/monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.monthly')",
+      "values": {
+        "ES": "Mensual",
+        "EN": "Monthly"
+      }
+    },
+    {
+      "name": "pricing/annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.annual')",
+      "values": {
+        "ES": "Anual",
+        "EN": "Annual"
+      }
+    },
+    {
+      "name": "pricing/save",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.save')",
+      "values": {
+        "ES": "Ahorra 20%",
+        "EN": "Save 20%"
+      }
+    },
+    {
+      "name": "pricing/period",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.period')",
+      "values": {
+        "ES": "/mes",
+        "EN": "/month"
+      }
+    },
+    {
+      "name": "pricing/badge",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.badge')",
+      "values": {
+        "ES": "Más popular",
+        "EN": "Most popular"
+      }
+    },
+    {
+      "name": "pricing/note",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.note')",
+      "values": {
+        "ES": "Precios sin IVA. ¿Eres estudiante u ONG? Escríbenos y te hacemos un descuento.",
+        "EN": "Prices exclude VAT. Student or non-profit? Get in touch for a discount."
+      }
+    },
+    {
+      "name": "pricing/essential/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.name')",
+      "values": {
+        "ES": "Esencial",
+        "EN": "Essential"
+      }
+    },
+    {
+      "name": "pricing/essential/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.desc')",
+      "values": {
+        "ES": "Para freelances que empiezan a ordenar a sus clientes.",
+        "EN": "For freelancers getting their clients in order."
+      }
+    },
+    {
+      "name": "pricing/essential/price-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.price-monthly')",
+      "values": {
+        "ES": "0 €",
+        "EN": "€0"
+      }
+    },
+    {
+      "name": "pricing/essential/price-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.price-annual')",
+      "values": {
+        "ES": "0 €",
+        "EN": "€0"
+      }
+    },
+    {
+      "name": "pricing/essential/note-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.note-monthly')",
+      "values": {
+        "ES": "Gratis para siempre",
+        "EN": "Free forever"
+      }
+    },
+    {
+      "name": "pricing/essential/note-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.note-annual')",
+      "values": {
+        "ES": "Gratis para siempre",
+        "EN": "Free forever"
+      }
+    },
+    {
+      "name": "pricing/essential/feature-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.feature-1')",
+      "values": {
+        "ES": "Hasta 3 clientes activos",
+        "EN": "Up to 3 active clients"
+      }
+    },
+    {
+      "name": "pricing/essential/feature-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.feature-2')",
+      "values": {
+        "ES": "Propuestas y aprobaciones",
+        "EN": "Proposals and approvals"
+      }
+    },
+    {
+      "name": "pricing/essential/feature-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.feature-3')",
+      "values": {
+        "ES": "2 GB de archivos",
+        "EN": "2 GB file storage"
+      }
+    },
+    {
+      "name": "pricing/essential/feature-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.feature-4')",
+      "values": {
+        "ES": "Portal con tu logo",
+        "EN": "Portal with your logo"
+      }
+    },
+    {
+      "name": "pricing/essential/feature-5",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.feature-5')",
+      "values": {
+        "ES": "Soporte por email",
+        "EN": "Email support"
+      }
+    },
+    {
+      "name": "pricing/essential/cta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.essential.cta')",
+      "values": {
+        "ES": "Empieza gratis",
+        "EN": "Start free"
+      }
+    },
+    {
+      "name": "pricing/studio/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.name')",
+      "values": {
+        "ES": "Estudio",
+        "EN": "Studio"
+      }
+    },
+    {
+      "name": "pricing/studio/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.desc')",
+      "values": {
+        "ES": "Para estudios pequeños con varios proyectos en marcha.",
+        "EN": "For small studios juggling several projects."
+      }
+    },
+    {
+      "name": "pricing/studio/price-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.price-monthly')",
+      "values": {
+        "ES": "39 €",
+        "EN": "€39"
+      }
+    },
+    {
+      "name": "pricing/studio/price-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.price-annual')",
+      "values": {
+        "ES": "31 €",
+        "EN": "€31"
+      }
+    },
+    {
+      "name": "pricing/studio/note-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.note-monthly')",
+      "values": {
+        "ES": "Facturado mensualmente",
+        "EN": "Billed monthly"
+      }
+    },
+    {
+      "name": "pricing/studio/note-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.note-annual')",
+      "values": {
+        "ES": "372 € facturados al año",
+        "EN": "€372 billed yearly"
+      }
+    },
+    {
+      "name": "pricing/studio/feature-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.feature-1')",
+      "values": {
+        "ES": "Clientes ilimitados",
+        "EN": "Unlimited clients"
+      }
+    },
+    {
+      "name": "pricing/studio/feature-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.feature-2')",
+      "values": {
+        "ES": "Facturas y pagos online",
+        "EN": "Invoices and online payments"
+      }
+    },
+    {
+      "name": "pricing/studio/feature-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.feature-3')",
+      "values": {
+        "ES": "Recordatorios automáticos",
+        "EN": "Automatic reminders"
+      }
+    },
+    {
+      "name": "pricing/studio/feature-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.feature-4')",
+      "values": {
+        "ES": "100 GB de archivos",
+        "EN": "100 GB file storage"
+      }
+    },
+    {
+      "name": "pricing/studio/feature-5",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.feature-5')",
+      "values": {
+        "ES": "Dominio y marca propios",
+        "EN": "Custom domain and branding"
+      }
+    },
+    {
+      "name": "pricing/studio/cta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.studio.cta')",
+      "values": {
+        "ES": "Prueba 14 días gratis",
+        "EN": "Try free for 14 days"
+      }
+    },
+    {
+      "name": "pricing/agency/name",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.name')",
+      "values": {
+        "ES": "Agencia",
+        "EN": "Agency"
+      }
+    },
+    {
+      "name": "pricing/agency/desc",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.desc')",
+      "values": {
+        "ES": "Para equipos que necesitan control, roles e integraciones.",
+        "EN": "For teams that need control, roles and integrations."
+      }
+    },
+    {
+      "name": "pricing/agency/price-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.price-monthly')",
+      "values": {
+        "ES": "89 €",
+        "EN": "€89"
+      }
+    },
+    {
+      "name": "pricing/agency/price-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.price-annual')",
+      "values": {
+        "ES": "71 €",
+        "EN": "€71"
+      }
+    },
+    {
+      "name": "pricing/agency/note-monthly",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.note-monthly')",
+      "values": {
+        "ES": "Facturado mensualmente",
+        "EN": "Billed monthly"
+      }
+    },
+    {
+      "name": "pricing/agency/note-annual",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.note-annual')",
+      "values": {
+        "ES": "852 € facturados al año",
+        "EN": "€852 billed yearly"
+      }
+    },
+    {
+      "name": "pricing/agency/feature-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.feature-1')",
+      "values": {
+        "ES": "Todo lo del plan Estudio",
+        "EN": "Everything in Studio"
+      }
+    },
+    {
+      "name": "pricing/agency/feature-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.feature-2')",
+      "values": {
+        "ES": "Hasta 15 miembros",
+        "EN": "Up to 15 team members"
+      }
+    },
+    {
+      "name": "pricing/agency/feature-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.feature-3')",
+      "values": {
+        "ES": "Roles y permisos",
+        "EN": "Roles and permissions"
+      }
+    },
+    {
+      "name": "pricing/agency/feature-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.feature-4')",
+      "values": {
+        "ES": "Integración con Figma y Slack",
+        "EN": "Figma and Slack integrations"
+      }
+    },
+    {
+      "name": "pricing/agency/feature-5",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.feature-5')",
+      "values": {
+        "ES": "Soporte prioritario",
+        "EN": "Priority support"
+      }
+    },
+    {
+      "name": "pricing/agency/cta",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('pricing.agency.cta')",
+      "values": {
+        "ES": "Hablar con ventas",
+        "EN": "Talk to sales"
+      }
+    },
+    {
+      "name": "faq/eyebrow",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.eyebrow')",
+      "values": {
+        "ES": "Preguntas frecuentes",
+        "EN": "FAQ"
+      }
+    },
+    {
+      "name": "faq/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.title')",
+      "values": {
+        "ES": "Lo que suelen preguntarnos",
+        "EN": "Questions we often get"
+      }
+    },
+    {
+      "name": "faq/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.subtitle')",
+      "values": {
+        "ES": "¿No encuentras tu respuesta? Escríbenos y te contestamos en menos de un día.",
+        "EN": "Can’t find your answer? Write to us and we’ll reply within a day."
+      }
+    },
+    {
+      "name": "faq/contact",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.contact')",
+      "values": {
+        "ES": "Escríbenos",
+        "EN": "Contact us"
+      }
+    },
+    {
+      "name": "faq/q1/question",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q1.question')",
+      "values": {
+        "ES": "¿Mis clientes necesitan crear una cuenta?",
+        "EN": "Do my clients need to create an account?"
+      }
+    },
+    {
+      "name": "faq/q1/answer",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q1.answer')",
+      "values": {
+        "ES": "No. Reciben un enlace mágico seguro y entran directamente a su espacio. Si quieren, pueden crear una contraseña más adelante.",
+        "EN": "No. They get a secure magic link and go straight to their space. They can set a password later if they like."
+      }
+    },
+    {
+      "name": "faq/q2/question",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q2.question')",
+      "values": {
+        "ES": "¿Puedo usar mi propio dominio y mi marca?",
+        "EN": "Can I use my own domain and branding?"
+      }
+    },
+    {
+      "name": "faq/q2/answer",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q2.answer')",
+      "values": {
+        "ES": "Sí. Desde el plan Estudio puedes usar tu dominio, tus colores y tu tipografía. Kiln se aparta y el portal parece tuyo.",
+        "EN": "Yes. From the Studio plan you can use your own domain, colours and typeface. Kiln steps aside and the portal feels like yours."
+      }
+    },
+    {
+      "name": "faq/q3/question",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q3.question')",
+      "values": {
+        "ES": "¿Cómo funcionan los pagos?",
+        "EN": "How do payments work?"
+      }
+    },
+    {
+      "name": "faq/q3/answer",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q3.answer')",
+      "values": {
+        "ES": "Conectas tu cuenta de Stripe en dos minutos. Tus clientes pagan con tarjeta, SEPA o Bizum y el dinero llega directamente a tu cuenta.",
+        "EN": "Connect your Stripe account in two minutes. Clients pay by card or bank transfer and the money goes straight to your account."
+      }
+    },
+    {
+      "name": "faq/q4/question",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q4.question')",
+      "values": {
+        "ES": "¿Puedo importar los proyectos que ya tengo en marcha?",
+        "EN": "Can I import projects that are already underway?"
+      }
+    },
+    {
+      "name": "faq/q4/answer",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q4.answer')",
+      "values": {
+        "ES": "Sí. Importa clientes desde CSV, Notion o Google Drive y arrastra tus archivos actuales a cada proyecto.",
+        "EN": "Yes. Import clients from CSV, Notion or Google Drive and drag your existing files into each project."
+      }
+    },
+    {
+      "name": "faq/q5/question",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q5.question')",
+      "values": {
+        "ES": "¿Qué pasa si cancelo?",
+        "EN": "What happens if I cancel?"
+      }
+    },
+    {
+      "name": "faq/q5/answer",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('faq.q5.answer')",
+      "values": {
+        "ES": "Puedes exportar todos tus datos y archivos cuando quieras. Al cancelar, tu cuenta pasa al plan Esencial gratuito.",
+        "EN": "You can export all your data and files anytime. When you cancel, your account moves to the free Essential plan."
+      }
+    },
+    {
+      "name": "cta/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('cta.title')",
+      "values": {
+        "ES": "Tu próximo proyecto merece menos correos",
+        "EN": "Your next project deserves fewer emails"
+      }
+    },
+    {
+      "name": "cta/subtitle",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('cta.subtitle')",
+      "values": {
+        "ES": "Crea tu portal en menos de 10 minutos. Gratis para tus tres primeros clientes.",
+        "EN": "Set up your portal in under 10 minutes. Free for your first three clients."
+      }
+    },
+    {
+      "name": "cta/primary",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('cta.primary')",
+      "values": {
+        "ES": "Empieza gratis",
+        "EN": "Start for free"
+      }
+    },
+    {
+      "name": "cta/secondary",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('cta.secondary')",
+      "values": {
+        "ES": "Reservar una demo",
+        "EN": "Book a demo"
+      }
+    },
+    {
+      "name": "footer/tagline",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.tagline')",
+      "values": {
+        "ES": "El portal de clientes para estudios de diseño pequeños.",
+        "EN": "The client portal for small design studios."
+      }
+    },
+    {
+      "name": "footer/product/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.product.title')",
+      "values": {
+        "ES": "Producto",
+        "EN": "Product"
+      }
+    },
+    {
+      "name": "footer/product/link-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.product.link-1')",
+      "values": {
+        "ES": "Funciones",
+        "EN": "Features"
+      }
+    },
+    {
+      "name": "footer/product/link-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.product.link-2')",
+      "values": {
+        "ES": "Precios",
+        "EN": "Pricing"
+      }
+    },
+    {
+      "name": "footer/product/link-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.product.link-3')",
+      "values": {
+        "ES": "Novedades",
+        "EN": "Changelog"
+      }
+    },
+    {
+      "name": "footer/product/link-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.product.link-4')",
+      "values": {
+        "ES": "Integraciones",
+        "EN": "Integrations"
+      }
+    },
+    {
+      "name": "footer/company/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.company.title')",
+      "values": {
+        "ES": "Compañía",
+        "EN": "Company"
+      }
+    },
+    {
+      "name": "footer/company/link-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.company.link-1')",
+      "values": {
+        "ES": "Sobre nosotros",
+        "EN": "About"
+      }
+    },
+    {
+      "name": "footer/company/link-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.company.link-2')",
+      "values": {
+        "ES": "Blog",
+        "EN": "Blog"
+      }
+    },
+    {
+      "name": "footer/company/link-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.company.link-3')",
+      "values": {
+        "ES": "Empleo",
+        "EN": "Careers"
+      }
+    },
+    {
+      "name": "footer/company/link-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.company.link-4')",
+      "values": {
+        "ES": "Contacto",
+        "EN": "Contact"
+      }
+    },
+    {
+      "name": "footer/resources/title",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.resources.title')",
+      "values": {
+        "ES": "Recursos",
+        "EN": "Resources"
+      }
+    },
+    {
+      "name": "footer/resources/link-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.resources.link-1')",
+      "values": {
+        "ES": "Guías",
+        "EN": "Guides"
+      }
+    },
+    {
+      "name": "footer/resources/link-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.resources.link-2')",
+      "values": {
+        "ES": "Plantillas de propuesta",
+        "EN": "Proposal templates"
+      }
+    },
+    {
+      "name": "footer/resources/link-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.resources.link-3')",
+      "values": {
+        "ES": "Centro de ayuda",
+        "EN": "Help centre"
+      }
+    },
+    {
+      "name": "footer/resources/link-4",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.resources.link-4')",
+      "values": {
+        "ES": "Estado del servicio",
+        "EN": "System status"
+      }
+    },
+    {
+      "name": "footer/copyright",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.copyright')",
+      "values": {
+        "ES": "© 2026 Kiln Labs S.L. Hecho con calma en Valencia.",
+        "EN": "© 2026 Kiln Labs. Made calmly in Valencia."
+      }
+    },
+    {
+      "name": "footer/legal-1",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.legal-1')",
+      "values": {
+        "ES": "Privacidad",
+        "EN": "Privacy"
+      }
+    },
+    {
+      "name": "footer/legal-2",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.legal-2')",
+      "values": {
+        "ES": "Términos",
+        "EN": "Terms"
+      }
+    },
+    {
+      "name": "footer/legal-3",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('footer.legal-3')",
+      "values": {
+        "ES": "Cookies",
+        "EN": "Cookies"
+      }
+    },
+    {
+      "name": "app/workspace-initials",
+      "collection": "Language",
+      "type": "STRING",
+      "scopes": [
+        "TEXT_CONTENT"
+      ],
+      "codeSyntax": "t('app.workspace-initials')",
+      "values": {
+        "ES": "EL",
+        "EN": "EL"
+      }
+    },
+    {
+      "name": "layout/frame-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-frame-width)",
+      "values": {
+        "Desktop 1440": 1440,
+        "Tablet 834": 834,
+        "Mobile 390": 390
+      }
+    },
+    {
+      "name": "layout/page-padding",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-page-padding)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/120"
+        },
+        "Tablet 834": {
+          "alias": "space/40"
+        },
+        "Mobile 390": {
+          "alias": "space/20"
+        }
+      }
+    },
+    {
+      "name": "layout/section-padding",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-section-padding)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/120"
+        },
+        "Tablet 834": {
+          "alias": "space/96"
+        },
+        "Mobile 390": {
+          "alias": "space/64"
+        }
+      }
+    },
+    {
+      "name": "layout/section-gap",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-section-gap)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/64"
+        },
+        "Tablet 834": {
+          "alias": "space/56"
+        },
+        "Mobile 390": {
+          "alias": "space/40"
+        }
+      }
+    },
+    {
+      "name": "layout/grid-gap",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-grid-gap)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/24"
+        },
+        "Tablet 834": {
+          "alias": "space/20"
+        },
+        "Mobile 390": {
+          "alias": "space/16"
+        }
+      }
+    },
+    {
+      "name": "layout/content-gap",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-content-gap)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/32"
+        },
+        "Tablet 834": {
+          "alias": "space/28"
+        },
+        "Mobile 390": {
+          "alias": "space/24"
+        }
+      }
+    },
+    {
+      "name": "layout/feature-gap",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-feature-gap)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/80"
+        },
+        "Tablet 834": {
+          "alias": "space/48"
+        },
+        "Mobile 390": {
+          "alias": "space/32"
+        }
+      }
+    },
+    {
+      "name": "layout/block-gap",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-block-gap)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/120"
+        },
+        "Tablet 834": {
+          "alias": "space/96"
+        },
+        "Mobile 390": {
+          "alias": "space/72"
+        }
+      }
+    },
+    {
+      "name": "layout/card-padding",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-card-padding)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/32"
+        },
+        "Tablet 834": {
+          "alias": "space/28"
+        },
+        "Mobile 390": {
+          "alias": "space/24"
+        }
+      }
+    },
+    {
+      "name": "layout/media-padding",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-media-padding)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/48"
+        },
+        "Tablet 834": {
+          "alias": "space/40"
+        },
+        "Mobile 390": {
+          "alias": "space/20"
+        }
+      }
+    },
+    {
+      "name": "layout/arch-padding-top",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-arch-padding-top)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/160"
+        },
+        "Tablet 834": {
+          "alias": "space/144"
+        },
+        "Mobile 390": {
+          "alias": "space/96"
+        }
+      }
+    },
+    {
+      "name": "layout/cta-padding",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "GAP"
+      ],
+      "codeSyntax": "var(--layout-cta-padding)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "space/80"
+        },
+        "Tablet 834": {
+          "alias": "space/64"
+        },
+        "Mobile 390": {
+          "alias": "space/40"
+        }
+      }
+    },
+    {
+      "name": "layout/hero-media-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-hero-media-width)",
+      "values": {
+        "Desktop 1440": 1200,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/hero-text-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-hero-text-width)",
+      "values": {
+        "Desktop 1440": 960,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/header-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-header-width)",
+      "values": {
+        "Desktop 1440": 720,
+        "Tablet 834": 640,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/step-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-step-width)",
+      "values": {
+        "Desktop 1440": 384,
+        "Tablet 834": 238,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/plan-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-plan-width)",
+      "values": {
+        "Desktop 1440": 384,
+        "Tablet 834": 560,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/testimonial-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-testimonial-width)",
+      "values": {
+        "Desktop 1440": 384,
+        "Tablet 834": 367,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/feature-text-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-feature-text-width)",
+      "values": {
+        "Desktop 1440": 480,
+        "Tablet 834": 640,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/feature-media-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-feature-media-width)",
+      "values": {
+        "Desktop 1440": 640,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/faq-head-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-faq-head-width)",
+      "values": {
+        "Desktop 1440": 384,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/faq-list-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-faq-list-width)",
+      "values": {
+        "Desktop 1440": 720,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/footer-brand-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-footer-brand-width)",
+      "values": {
+        "Desktop 1440": 360,
+        "Tablet 834": 754,
+        "Mobile 390": 350
+      }
+    },
+    {
+      "name": "layout/footer-col-width",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "codeSyntax": "var(--layout-footer-col-width)",
+      "values": {
+        "Desktop 1440": 180,
+        "Tablet 834": 220,
+        "Mobile 390": 165
+      }
+    },
+    {
+      "name": "type/display-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-display-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/72"
+        },
+        "Tablet 834": {
+          "alias": "font/size/56"
+        },
+        "Mobile 390": {
+          "alias": "font/size/40"
+        }
+      }
+    },
+    {
+      "name": "type/display-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-display-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/76"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/60"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/44"
+        }
+      }
+    },
+    {
+      "name": "type/h2-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-h2-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/48"
+        },
+        "Tablet 834": {
+          "alias": "font/size/40"
+        },
+        "Mobile 390": {
+          "alias": "font/size/32"
+        }
+      }
+    },
+    {
+      "name": "type/h2-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-h2-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/56"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/48"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/38"
+        }
+      }
+    },
+    {
+      "name": "type/h3-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-h3-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/32"
+        },
+        "Tablet 834": {
+          "alias": "font/size/28"
+        },
+        "Mobile 390": {
+          "alias": "font/size/24"
+        }
+      }
+    },
+    {
+      "name": "type/h3-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-h3-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/40"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/36"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/30"
+        }
+      }
+    },
+    {
+      "name": "type/h4-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-h4-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/20"
+        },
+        "Tablet 834": {
+          "alias": "font/size/20"
+        },
+        "Mobile 390": {
+          "alias": "font/size/18"
+        }
+      }
+    },
+    {
+      "name": "type/h4-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-h4-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/28"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/28"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/26"
+        }
+      }
+    },
+    {
+      "name": "type/body-lg-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-body-lg-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/20"
+        },
+        "Tablet 834": {
+          "alias": "font/size/18"
+        },
+        "Mobile 390": {
+          "alias": "font/size/17"
+        }
+      }
+    },
+    {
+      "name": "type/body-lg-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-body-lg-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/30"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/28"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/26"
+        }
+      }
+    },
+    {
+      "name": "type/quote-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-quote-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/22"
+        },
+        "Tablet 834": {
+          "alias": "font/size/20"
+        },
+        "Mobile 390": {
+          "alias": "font/size/18"
+        }
+      }
+    },
+    {
+      "name": "type/quote-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-quote-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/32"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/30"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/28"
+        }
+      }
+    },
+    {
+      "name": "type/price-size",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "FONT_SIZE"
+      ],
+      "codeSyntax": "var(--type-price-size)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/size/48"
+        },
+        "Tablet 834": {
+          "alias": "font/size/48"
+        },
+        "Mobile 390": {
+          "alias": "font/size/40"
+        }
+      }
+    },
+    {
+      "name": "type/price-line-height",
+      "collection": "Layout",
+      "type": "FLOAT",
+      "scopes": [
+        "LINE_HEIGHT"
+      ],
+      "codeSyntax": "var(--type-price-line-height)",
+      "values": {
+        "Desktop 1440": {
+          "alias": "font/line-height/52"
+        },
+        "Tablet 834": {
+          "alias": "font/line-height/52"
+        },
+        "Mobile 390": {
+          "alias": "font/line-height/44"
+        }
+      }
+    },
+    {
+      "name": "layout/visible-desktop",
+      "collection": "Layout",
+      "type": "BOOLEAN",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "codeSyntax": "var(--layout-visible-desktop)",
+      "values": {
+        "Desktop 1440": true,
+        "Tablet 834": false,
+        "Mobile 390": false
+      }
+    },
+    {
+      "name": "layout/visible-tablet-up",
+      "collection": "Layout",
+      "type": "BOOLEAN",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "codeSyntax": "var(--layout-visible-tablet-up)",
+      "values": {
+        "Desktop 1440": true,
+        "Tablet 834": true,
+        "Mobile 390": false
+      }
+    },
+    {
+      "name": "layout/visible-tablet-down",
+      "collection": "Layout",
+      "type": "BOOLEAN",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "codeSyntax": "var(--layout-visible-tablet-down)",
+      "values": {
+        "Desktop 1440": false,
+        "Tablet 834": true,
+        "Mobile 390": true
+      }
+    },
+    {
+      "name": "layout/visible-mobile",
+      "collection": "Layout",
+      "type": "BOOLEAN",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "codeSyntax": "var(--layout-visible-mobile)",
+      "values": {
+        "Desktop 1440": false,
+        "Tablet 834": false,
+        "Mobile 390": true
+      }
+    }
+  ],
+  "textStyles": [
+    {
+      "name": "Display",
+      "description": "font: Fraunces Regular · size: type/display-size · line-height: type/display-line-height",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/display-size"
+      },
+      "lineHeight": {
+        "alias": "type/display-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Heading/H2",
+      "description": "font: Fraunces Regular · size: type/h2-size · line-height: type/h2-line-height",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/h2-size"
+      },
+      "lineHeight": {
+        "alias": "type/h2-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -1.5
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Heading/H3",
+      "description": "font: Fraunces Regular · size: type/h3-size · line-height: type/h3-line-height",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/h3-size"
+      },
+      "lineHeight": {
+        "alias": "type/h3-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -1
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Heading/H4",
+      "description": "font: Instrument Sans SemiBold · size: type/h4-size · line-height: type/h4-line-height",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/h4-size"
+      },
+      "lineHeight": {
+        "alias": "type/h4-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -0.5
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Body/Large",
+      "description": "font: Instrument Sans Regular · size: type/body-lg-size · line-height: type/body-lg-line-height",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/body-lg-size"
+      },
+      "lineHeight": {
+        "alias": "type/body-lg-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Body/Medium",
+      "description": "font: Instrument Sans Regular · size: font/size/16 · line-height: font/line-height/24",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/16"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/24"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Body/Small",
+      "description": "font: Instrument Sans Regular · size: font/size/14 · line-height: font/line-height/20",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/14"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/20"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Label/Large",
+      "description": "font: Instrument Sans SemiBold · size: font/size/16 · line-height: font/line-height/24",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/16"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/24"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Label/Medium",
+      "description": "font: Instrument Sans Medium · size: font/size/15 · line-height: font/line-height/20",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/15"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/20"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Label/Small",
+      "description": "font: Instrument Sans Medium · size: font/size/13 · line-height: font/line-height/18",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/13"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/18"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Overline",
+      "description": "font: Instrument Sans SemiBold · size: font/size/13 · line-height: font/line-height/16",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/13"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/16"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 8
+      },
+      "textCase": "UPPER",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Caption",
+      "description": "font: Instrument Sans Regular · size: font/size/12 · line-height: font/line-height/16",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/12"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/16"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Quote",
+      "description": "font: Fraunces Italic · size: type/quote-size · line-height: type/quote-line-height",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Italic",
+      "fontWeight": 400,
+      "italic": true,
+      "fontSize": {
+        "alias": "type/quote-size"
+      },
+      "lineHeight": {
+        "alias": "type/quote-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -0.5
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Price",
+      "description": "font: Fraunces Regular · size: type/price-size · line-height: type/price-line-height",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "type/price-size"
+      },
+      "lineHeight": {
+        "alias": "type/price-line-height"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Numeral",
+      "description": "font: Fraunces Regular · size: font/size/28 · line-height: font/line-height/32",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/28"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/32"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -1
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "App/Title",
+      "description": "font: Instrument Sans SemiBold · size: font/size/18 · line-height: font/line-height/24",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/18"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/24"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -0.5
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "App/Body",
+      "description": "font: Instrument Sans Regular · size: font/size/13 · line-height: font/line-height/18",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/13"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/18"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "App/Strong",
+      "description": "font: Instrument Sans SemiBold · size: font/size/13 · line-height: font/line-height/18",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/13"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/18"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "App/Label",
+      "description": "font: Instrument Sans Medium · size: font/size/12 · line-height: font/line-height/16",
+      "fontFamily": {
+        "alias": "font/family/body"
+      },
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/12"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/16"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "name": "Logo/Wordmark",
+      "description": "font: Fraunces SemiBold · size: font/size/24 · line-height: font/line-height/28",
+      "fontFamily": {
+        "alias": "font/family/display"
+      },
+      "fontStyle": "SemiBold",
+      "fontWeight": 600,
+      "italic": false,
+      "fontSize": {
+        "alias": "font/size/24"
+      },
+      "lineHeight": {
+        "alias": "font/line-height/28"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    }
+  ],
+  "effectStyles": [
+    {
+      "name": "Shadow/Small",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 1,
+          "radius": 2,
+          "spread": 0,
+          "color": {
+            "alias": "effect/shadow-soft"
+          }
+        },
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 2,
+          "radius": 8,
+          "spread": -2,
+          "color": {
+            "alias": "effect/shadow-soft"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shadow/Medium",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 4,
+          "radius": 12,
+          "spread": -2,
+          "color": {
+            "alias": "effect/shadow-soft"
+          }
+        },
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 16,
+          "radius": 32,
+          "spread": -8,
+          "color": {
+            "alias": "effect/shadow-soft"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shadow/Large",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 8,
+          "radius": 16,
+          "spread": -4,
+          "color": {
+            "alias": "effect/shadow-soft"
+          }
+        },
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 32,
+          "radius": 64,
+          "spread": -16,
+          "color": {
+            "alias": "effect/shadow-strong"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Focus/Ring",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "x": 0,
+          "y": 0,
+          "radius": 0,
+          "spread": 4,
+          "color": {
+            "alias": "effect/focus-ring"
+          }
+        }
+      ]
+    }
+  ]
+}

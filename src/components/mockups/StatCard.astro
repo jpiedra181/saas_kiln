@@ -1,0 +1,25 @@
+---
+/** Tarjeta de KPI del panel (componente "Stat card" de Figma). */
+import Icon from '../ui/Icon.astro';
+
+interface Props {
+  label: string;
+  value: string;
+  meta: string;
+  trend?: boolean;
+  class?: string;
+}
+
+const { label, value, meta, trend = false, class: className } = Astro.props;
+---
+
+<div class:list={['flex min-w-0 flex-1 flex-col gap-6 rounded-12 border border-default bg-surface p-16', className]}>
+  <span class="type-app-label text-secondary">{label}</span>
+  <span class="type-numeral text-primary" data-count-up>
+    {value}
+  </span>
+  <span class="flex items-center gap-4">
+    {trend && <Icon name="trending-up" class="size-14 icon-success" />}
+    <span class:list={['min-w-0 flex-1 type-app-label', trend ? 'text-success' : 'text-tertiary']}>{meta}</span>
+  </span>
+</div>

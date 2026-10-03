@@ -1,0 +1,55 @@
+---
+/** Testimonios (sección "Testimonials" con "Testimonial card" de Figma). */
+import Avatar, { type AvatarTone } from '../ui/Avatar.astro';
+import Icon from '../ui/Icon.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const items: { n: 't1' | 't2' | 't3'; tone: AvatarTone }[] = [
+  { n: 't1', tone: 'moss' },
+  { n: 't2', tone: 'clay' },
+  { n: 't3', tone: 'ember' },
+];
+---
+
+<section class="bg-subtle px-page py-section-padding" aria-labelledby="testimonials-title" data-section="testimonials">
+  <div class="mx-auto flex w-full max-w-hero-media flex-col items-center gap-section-gap">
+    <SectionHeader
+      id="testimonials-title"
+      eyebrow={t('testimonials.eyebrow')}
+      title={t('testimonials.title')}
+      subtitle={t('testimonials.subtitle')}
+    />
+    <ul class="flex w-full flex-wrap justify-center gap-grid lg:grid lg:grid-cols-3">
+      {items.map(({ n, tone }) => (
+        <li class="flex w-testimonial max-w-full lg:w-auto" data-reveal>
+          <figure class="flex w-full flex-col justify-between rounded-24 border border-default bg-surface p-card transition-[border-color,box-shadow] hover:border-strong hover:shadow-md">
+            <div class="flex flex-col gap-24 pb-24">
+              <span class="flex gap-2 icon-warning" role="img" aria-label={t('a11y.rating')}>
+                {[1, 2, 3, 4, 5].map(() => (
+                  <Icon name="star" class="size-16" />
+                ))}
+              </span>
+              <blockquote class="type-quote text-primary">
+                <p>{t(`testimonials.${n}.quote`)}</p>
+              </blockquote>
+            </div>
+            <figcaption class="flex items-center gap-12">
+              <Avatar initials={t(`testimonials.${n}.initials`)} size="md" tone={tone} />
+              <span class="flex min-w-0 flex-1 flex-col gap-2">
+                <span class="type-label-lg text-primary">{t(`testimonials.${n}.name`)}</span>
+                <span class="type-body-sm text-secondary">{t(`testimonials.${n}.role`)}</span>
+              </span>
+            </figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

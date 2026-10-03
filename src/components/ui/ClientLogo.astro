@@ -1,0 +1,69 @@
+---
+/**
+ * Logo de cliente ficticio (componente "Client logo" de Figma): marca SVG + nombre en texto real.
+ * La tipografía de cada logotipo es propia de la marca ficticia y no forma parte de la escala de texto,
+ * por eso sus medidas están aquí y no en los estilos de texto.
+ */
+import { useTranslations, type Locale } from '../../i18n';
+
+type Brand = 'atelier-nord' | 'fieldwork' | 'paloma' | 'oakhouse' | 'monoforma' | 'linea';
+
+interface Props {
+  brand: Brand;
+  locale: Locale;
+}
+
+const marks = import.meta.glob<string>('../../assets/brand/client-*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+const { brand, locale } = Astro.props;
+const t = useTranslations(locale);
+const raw = marks[`../../assets/brand/client-${brand}.svg`];
+const mark = raw
+  .replace(/\s(id|style)="[^"]*"/g, '')
+  .replace('<svg', '<svg class="icon client-mark" aria-hidden="true" focusable="false"');
+---
+
+<span class="flex items-center gap-8 icon-secondary">
+  <Fragment set:html={mark} />
+  <span class:list={['client-name text-tertiary', `client-name--${brand}`]}>{t(`logos.${brand}`)}</span>
+</span>
+
+<style>
+  :global(.client-mark) {
+    width: var(--space-24);
+    height: var(--space-24);
+  }
+  .client-name {
+    white-space: nowrap;
+    line-height: var(--line-height-28);
+  }
+  /* Medidas de los logotipos en Figma: 23 / 16 / 23 / 21 / 21 / 22 px. */
+  .client-name--atelier-nord {
+    font: italic 400 1.4375rem / var(--line-height-28) var(--font-display);
+  }
+  .client-name--fieldwork {
+    font: 700 1rem / var(--line-height-28) var(--font-body);
+    letter-spacing: 0.18em;
+    margin-inline-end: -0.18em; /* el navegador añade el tracking tras la última letra; Figma no lo cuenta */
+  }
+  .client-name--paloma {
+    font: 600 1.4375rem / var(--line-height-28) var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  .client-name--oakhouse {
+    font: 600 1.3125rem / var(--line-height-28) var(--font-body);
+    letter-spacing: -0.03em;
+  }
+  .client-name--monoforma {
+    font: 500 1.3125rem / var(--line-height-28) var(--font-body);
+    letter-spacing: -0.02em;
+  }
+  .client-name--linea {
+    font: 400 1.375rem / var(--line-height-28) var(--font-display);
+    letter-spacing: -0.01em;
+  }
+</style>

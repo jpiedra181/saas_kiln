@@ -1,0 +1,34 @@
+---
+/**
+ * Enlace de texto (componente "Link" de Figma).
+ * Brand para llamadas a la acción dentro del contenido; Neutral para navegación y pie.
+ */
+import type { HTMLAttributes } from 'astro/types';
+import Icon, { type IconName } from './Icon.astro';
+
+interface Props extends HTMLAttributes<'a'> {
+  tone?: 'brand' | 'neutral';
+  size?: 'md' | 'sm';
+  icon?: IconName;
+}
+
+const { tone = 'brand', size = 'md', icon, class: className, ...rest } = Astro.props;
+const tones = {
+  brand: 'text-brand hover:text-brand-hover active:bg-brand-subtle active:text-brand-hover',
+  neutral: 'text-secondary hover:text-primary active:bg-pressed active:text-primary',
+};
+const sizes = { md: 'type-label-md', sm: 'type-body-sm' };
+---
+
+<a
+  class:list={[
+    'inline-flex items-center gap-6 rounded-4 transition-colors focus-visible:bg-brand-subtle',
+    tones[tone],
+    sizes[size],
+    className,
+  ]}
+  {...rest}
+>
+  <slot />
+  {icon && <Icon name={icon} class={size === 'md' ? 'size-16' : 'size-14'} />}
+</a>

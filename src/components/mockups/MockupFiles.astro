@@ -1,0 +1,87 @@
+---
+/** Mockup de archivos versionados con comentario fijado (componente "Mockup/Files" de Figma). */
+import Avatar from '../ui/Avatar.astro';
+import Badge from '../ui/Badge.astro';
+import Icon, { type IconName } from '../ui/Icon.astro';
+import MockupFrame from './MockupFrame.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const files: { n: 1 | 2 | 3; icon: IconName }[] = [
+  { n: 1, icon: 'image' },
+  { n: 2, icon: 'file-text' },
+  { n: 3, icon: 'folder' },
+];
+---
+
+<MockupFrame tone="moss" label={t('a11y.mock-files')}>
+  <div class="mockup-card flex w-full flex-col gap-16 overflow-hidden rounded-20 border border-default bg-surface p-24 shadow-lg">
+    <div class="flex items-center gap-12">
+      <span class="flex min-w-0 flex-1 flex-col gap-2">
+        <span class="type-app-title text-primary">{t('mock.files.title')}</span>
+        <span class="type-app-label text-tertiary">{t('mock.files.project')}</span>
+      </span>
+      <span class="inline-flex shrink-0 items-center gap-8 rounded-full border border-strong bg-surface px-16 py-10 type-label-md text-primary">
+        {t('mock.files.upload')}
+        <Icon name="upload" class="size-16" />
+      </span>
+    </div>
+
+    <div class="relative flex h-preview flex-col items-center justify-center gap-10 overflow-hidden rounded-12 bg-decor-ember-soft">
+      <span class="h-artwork w-56 rounded-t-full bg-decor-clay"></span>
+      <span class="artwork-name text-primary">{t('app.row-1.client')}</span>
+      <span
+        class="absolute top-12 right-12 flex w-comment max-w-[calc(100%-var(--space-24))] items-start gap-8 rounded-tl-4 rounded-tr-12 rounded-b-12 bg-surface-raised px-10 py-8 shadow-md"
+        data-mockup-pop
+      >
+        <Avatar initials={t('mock.proposal.comment-initials')} tone="ember" />
+        <span class="flex min-w-0 flex-1 flex-col gap-2">
+          <span class="type-app-label text-tertiary">{t('mock.files.comment-author')}</span>
+          <span class="type-app-body text-primary">{t('mock.files.comment')}</span>
+        </span>
+      </span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      {files.map(({ n, icon }) => (
+        <span class:list={['flex items-center gap-12 rounded-8 p-8', n === 1 && 'bg-subtle']}>
+          <span
+            class:list={[
+              'flex size-icon-wrap shrink-0 items-center justify-center rounded-8',
+              n === 1 ? 'bg-surface' : 'bg-muted',
+            ]}
+          >
+            <Icon name={icon} class="size-icon-md icon-primary" />
+          </span>
+          <span class="flex min-w-0 flex-1 flex-col">
+            <span class="type-app-strong text-primary">{t(`mock.files.file-${n}`)}</span>
+            <span class="type-app-label text-tertiary">{t(`mock.files.file-${n}-meta`)}</span>
+          </span>
+          {n === 1 && (
+            <Badge tone="success" class="visible-tablet-up">
+              {t('mock.files.latest')}
+            </Badge>
+          )}
+          <span class="type-app-strong text-secondary">{t(`mock.files.file-${n}-version`)}</span>
+        </span>
+      ))}
+    </div>
+  </div>
+</MockupFrame>
+
+<style>
+  /* Nombre del cliente en la vista previa: Fraunces SemiBold con las medidas de Heading/H4. */
+  .artwork-name {
+    font-family: var(--font-display);
+    font-size: var(--type-h4-size);
+    line-height: var(--type-h4-line-height);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    white-space: nowrap;
+  }
+</style>

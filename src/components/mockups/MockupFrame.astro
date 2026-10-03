@@ -1,0 +1,27 @@
+---
+/**
+ * Arco de color que enmarca los mockups de Funciones (fondo de "Mockup/Proposal", "Mockup/Files" y "Mockup/Invoice").
+ * Es una imagen para los lectores de pantalla: role="img" con la descripción del contenido.
+ */
+interface Props {
+  tone: 'clay' | 'moss' | 'ember';
+  label: string;
+  class?: string;
+}
+
+const { tone, label, class: className } = Astro.props;
+const tones = { clay: 'bg-decor-clay-soft', moss: 'bg-decor-moss-soft', ember: 'bg-decor-ember-soft' };
+---
+
+<div
+  role="img"
+  aria-label={label}
+  class:list={[
+    'mockup-frame flex w-full max-w-feature-media flex-col items-center rounded-t-full rounded-b-32 px-media pt-arch pb-media',
+    tones[tone],
+    className,
+  ]}
+  data-mockup
+>
+  <slot />
+</div>

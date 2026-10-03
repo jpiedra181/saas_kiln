@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@import './tailwind.theme.css';
+@import './tokens.css';
+@import './dimensions.css';
+
+@layer base {
+  html {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: var(--space-96);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    min-height: 100dvh;
+    overflow-x: clip;
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border-default);
+  }
+
+  ::selection {
+    background-color: var(--bg-brand-subtle);
+    color: var(--text-primary);
+  }
+
+  /* Foco visible en todo: contorno sólido border/focus (≥ 3:1) y el halo de Focus/Ring de Figma. */
+  :focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
+
+@layer components {
+  /* Variante de Figma para botones, tarjetas y controles: el contorno sustituye al borde y el halo va por fuera. */
+  .focus-ring:focus-visible {
+    outline-offset: -2px;
+    box-shadow: var(--focus-ring-halo);
+  }
+
+  /* Iconos de Figma insertados en línea: heredan el color del texto (los SVG originales no se modifican). */
+  .icon {
+    display: block;
+    flex-shrink: 0;
+  }
+  .icon [stroke]:not([stroke='none']) {
+    stroke: currentColor;
+  }
+  .icon [fill]:not([fill='none']) {
+    fill: currentColor;
+  }
+}
+
+/* Estado inicial de las animaciones de entrada. Solo se aplica si hay JavaScript y no se pide movimiento
+   reducido (la clase la pone el script del <head>); GSAP lleva cada elemento a su estado final. */
+.motion [data-reveal],
+.motion [data-hero-item],
+.motion [data-hero-arch],
+.motion [data-hero-toast],
+.motion [data-hero-media] > [role='img'] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

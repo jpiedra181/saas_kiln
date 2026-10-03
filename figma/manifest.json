@@ -1,0 +1,11 @@
+{
+  "name": "Kiln · Export tokens",
+  "id": "kiln-export-tokens-local",
+  "api": "1.0.0",
+  "main": "export-tokens.js",
+  "ui": "ui.html",
+  "editorType": ["figma", "dev"],
+  "capabilities": ["inspect"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] }
+}

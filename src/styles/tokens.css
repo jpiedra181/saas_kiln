@@ -1,0 +1,434 @@
+/* GENERADO por scripts/build-tokens.ts desde tokens/figma.json — no editar a mano.
+   Variables de Figma: Primitives, Theme (Light/Dark) y Layout (fluido entre 390, 834 y 1440).
+   Para actualizar: exporta de nuevo desde Figma y ejecuta `npm run tokens`. */
+
+:root {
+  /* Primitives (radios y familias tipográficas: ver tailwind.theme.css) */
+  --clay-50: #fbf0ea;
+  --clay-100: #f6dfd3;
+  --clay-200: #edbfa8;
+  --clay-300: #e29a7a;
+  --clay-400: #d47552;
+  --clay-500: #c2583a;
+  --clay-600: #a8452c;
+  --clay-700: #8a3725;
+  --clay-800: #6b2c20;
+  --clay-900: #4b2018;
+  --clay-950: #2e1510;
+  --sand-0: #fffdf9;
+  --sand-50: #faf6ef;
+  --sand-100: #f3ece1;
+  --sand-200: #e8dfd1;
+  --sand-300: #d7cab7;
+  --sand-400: #b5a58f;
+  --sand-500: #8e7f6b;
+  --sand-600: #6c5f4f;
+  --sand-700: #4e443a;
+  --sand-800: #352e27;
+  --sand-900: #252019;
+  --sand-925: #1d1914;
+  --sand-950: #15120e;
+  --moss-50: #f1f4ec;
+  --moss-100: #e0e8d6;
+  --moss-200: #c3d1b2;
+  --moss-300: #a0b48a;
+  --moss-400: #7f9768;
+  --moss-500: #627c4d;
+  --moss-600: #4c633c;
+  --moss-700: #3b4d30;
+  --moss-800: #2d3b25;
+  --moss-900: #20291b;
+  --moss-950: #141a11;
+  --ember-50: #fdf6e6;
+  --ember-100: #faeac2;
+  --ember-200: #f5d48a;
+  --ember-300: #edbb55;
+  --ember-400: #e0a12f;
+  --ember-500: #c6861b;
+  --ember-600: #a06a13;
+  --ember-700: #7b5011;
+  --ember-800: #5b3b0f;
+  --ember-900: #3e290c;
+  --ember-950: #261908;
+  --alpha-ink-8: #25201914;
+  --alpha-ink-16: #25201929;
+  --alpha-black-40: #00000066;
+  --alpha-black-60: #00000099;
+  --alpha-clay-32: #c2583a52;
+  --alpha-clay-light-40: #e29a7a66;
+  --space-0: 0;
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-6: 0.375rem;
+  --space-8: 0.5rem;
+  --space-10: 0.625rem;
+  --space-12: 0.75rem;
+  --space-14: 0.875rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-28: 1.75rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --space-72: 4.5rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+  --space-120: 7.5rem;
+  --space-144: 9rem;
+  --space-160: 10rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.8125rem;
+  --font-size-14: 0.875rem;
+  --font-size-15: 0.9375rem;
+  --font-size-16: 1rem;
+  --font-size-17: 1.0625rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+  --font-size-26: 1.625rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-48: 3rem;
+  --font-size-56: 3.5rem;
+  --font-size-72: 4.5rem;
+  --line-height-16: 1rem;
+  --line-height-18: 1.125rem;
+  --line-height-20: 1.25rem;
+  --line-height-22: 1.375rem;
+  --line-height-24: 1.5rem;
+  --line-height-26: 1.625rem;
+  --line-height-28: 1.75rem;
+  --line-height-30: 1.875rem;
+  --line-height-32: 2rem;
+  --line-height-36: 2.25rem;
+  --line-height-38: 2.375rem;
+  --line-height-40: 2.5rem;
+  --line-height-44: 2.75rem;
+  --line-height-48: 3rem;
+  --line-height-52: 3.25rem;
+  --line-height-56: 3.5rem;
+  --line-height-60: 3.75rem;
+  --line-height-76: 4.75rem;
+  --sand-550: #766957;
+}
+
+/* Theme · Light (por defecto) */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-canvas: var(--sand-50);
+  --bg-subtle: var(--sand-100);
+  --bg-surface: var(--sand-0);
+  --bg-surface-raised: var(--sand-0);
+  --bg-muted: var(--sand-100);
+  --bg-hover: var(--sand-100);
+  --bg-pressed: var(--sand-200);
+  --bg-emphasis: var(--sand-900);
+  --bg-brand: var(--clay-600);
+  --bg-brand-hover: var(--clay-700);
+  --bg-brand-pressed: var(--clay-800);
+  --bg-brand-subtle: var(--clay-50);
+  --bg-accent-subtle: var(--moss-50);
+  --bg-warning-subtle: var(--ember-50);
+  --bg-disabled: var(--sand-200);
+  --bg-toggle-off: var(--sand-500);
+  --bg-toggle-off-hover: var(--sand-600);
+  --bg-knob: var(--sand-0);
+  --text-primary: var(--sand-900);
+  --text-secondary: var(--sand-600);
+  --text-tertiary: var(--sand-550);
+  --text-disabled: var(--sand-400);
+  --text-brand: var(--clay-600);
+  --text-brand-hover: var(--clay-800);
+  --text-on-brand: var(--sand-0);
+  --text-on-emphasis: var(--sand-50);
+  --text-on-emphasis-secondary: var(--sand-300);
+  --text-success: var(--moss-700);
+  --text-warning: var(--ember-700);
+  --text-danger: var(--clay-700);
+  --border-subtle: var(--sand-100);
+  --border-default: var(--sand-200);
+  --border-strong: var(--sand-300);
+  --border-brand: var(--clay-600);
+  --border-focus: var(--clay-500);
+  --border-on-emphasis: var(--sand-700);
+  --icon-primary: var(--sand-900);
+  --icon-secondary: var(--sand-500);
+  --icon-brand: var(--clay-600);
+  --icon-on-brand: var(--sand-0);
+  --icon-on-emphasis: var(--sand-50);
+  --icon-success: var(--moss-600);
+  --icon-warning: var(--ember-500);
+  --icon-danger: var(--clay-600);
+  --icon-disabled: var(--sand-400);
+  --status-success-bg: var(--moss-100);
+  --status-success-fg: var(--moss-700);
+  --status-warning-bg: var(--ember-100);
+  --status-warning-fg: var(--ember-700);
+  --status-danger-bg: var(--clay-100);
+  --status-danger-fg: var(--clay-700);
+  --status-neutral-bg: var(--sand-100);
+  --status-neutral-fg: var(--sand-600);
+  --decor-clay: var(--clay-300);
+  --decor-moss: var(--moss-300);
+  --decor-ember: var(--ember-300);
+  --decor-sand: var(--sand-300);
+  --decor-clay-soft: var(--clay-100);
+  --decor-moss-soft: var(--moss-100);
+  --decor-ember-soft: var(--ember-100);
+  --effect-shadow-soft: var(--alpha-ink-8);
+  --effect-shadow-strong: var(--alpha-ink-16);
+  --effect-focus-ring: var(--alpha-clay-32);
+}
+
+/* Theme · Dark (elegido a mano) */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-canvas: var(--sand-950);
+  --bg-subtle: var(--sand-925);
+  --bg-surface: var(--sand-900);
+  --bg-surface-raised: var(--sand-800);
+  --bg-muted: var(--sand-800);
+  --bg-hover: var(--sand-800);
+  --bg-pressed: var(--sand-700);
+  --bg-emphasis: var(--sand-800);
+  --bg-brand: var(--clay-400);
+  --bg-brand-hover: var(--clay-300);
+  --bg-brand-pressed: var(--clay-500);
+  --bg-brand-subtle: var(--clay-950);
+  --bg-accent-subtle: var(--moss-950);
+  --bg-warning-subtle: var(--ember-950);
+  --bg-disabled: var(--sand-800);
+  --bg-toggle-off: var(--sand-500);
+  --bg-toggle-off-hover: var(--sand-400);
+  --bg-knob: var(--sand-50);
+  --text-primary: var(--sand-50);
+  --text-secondary: var(--sand-300);
+  --text-tertiary: var(--sand-400);
+  --text-disabled: var(--sand-600);
+  --text-brand: var(--clay-300);
+  --text-brand-hover: var(--clay-200);
+  --text-on-brand: var(--sand-950);
+  --text-on-emphasis: var(--sand-50);
+  --text-on-emphasis-secondary: var(--sand-300);
+  --text-success: var(--moss-200);
+  --text-warning: var(--ember-200);
+  --text-danger: var(--clay-200);
+  --border-subtle: var(--sand-900);
+  --border-default: var(--sand-800);
+  --border-strong: var(--sand-700);
+  --border-brand: var(--clay-400);
+  --border-focus: var(--clay-300);
+  --border-on-emphasis: var(--sand-700);
+  --icon-primary: var(--sand-50);
+  --icon-secondary: var(--sand-400);
+  --icon-brand: var(--clay-300);
+  --icon-on-brand: var(--sand-950);
+  --icon-on-emphasis: var(--sand-50);
+  --icon-success: var(--moss-300);
+  --icon-warning: var(--ember-300);
+  --icon-danger: var(--clay-300);
+  --icon-disabled: var(--sand-600);
+  --status-success-bg: var(--moss-900);
+  --status-success-fg: var(--moss-200);
+  --status-warning-bg: var(--ember-900);
+  --status-warning-fg: var(--ember-200);
+  --status-danger-bg: var(--clay-900);
+  --status-danger-fg: var(--clay-200);
+  --status-neutral-bg: var(--sand-800);
+  --status-neutral-fg: var(--sand-300);
+  --decor-clay: var(--clay-500);
+  --decor-moss: var(--moss-500);
+  --decor-ember: var(--ember-500);
+  --decor-sand: var(--sand-600);
+  --decor-clay-soft: var(--clay-900);
+  --decor-moss-soft: var(--moss-900);
+  --decor-ember-soft: var(--ember-900);
+  --effect-shadow-soft: var(--alpha-black-40);
+  --effect-shadow-strong: var(--alpha-black-60);
+  --effect-focus-ring: var(--alpha-clay-light-40);
+}
+
+/* Theme · Dark (preferencia del sistema, si no se eligió otro) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg-canvas: var(--sand-950);
+    --bg-subtle: var(--sand-925);
+    --bg-surface: var(--sand-900);
+    --bg-surface-raised: var(--sand-800);
+    --bg-muted: var(--sand-800);
+    --bg-hover: var(--sand-800);
+    --bg-pressed: var(--sand-700);
+    --bg-emphasis: var(--sand-800);
+    --bg-brand: var(--clay-400);
+    --bg-brand-hover: var(--clay-300);
+    --bg-brand-pressed: var(--clay-500);
+    --bg-brand-subtle: var(--clay-950);
+    --bg-accent-subtle: var(--moss-950);
+    --bg-warning-subtle: var(--ember-950);
+    --bg-disabled: var(--sand-800);
+    --bg-toggle-off: var(--sand-500);
+    --bg-toggle-off-hover: var(--sand-400);
+    --bg-knob: var(--sand-50);
+    --text-primary: var(--sand-50);
+    --text-secondary: var(--sand-300);
+    --text-tertiary: var(--sand-400);
+    --text-disabled: var(--sand-600);
+    --text-brand: var(--clay-300);
+    --text-brand-hover: var(--clay-200);
+    --text-on-brand: var(--sand-950);
+    --text-on-emphasis: var(--sand-50);
+    --text-on-emphasis-secondary: var(--sand-300);
+    --text-success: var(--moss-200);
+    --text-warning: var(--ember-200);
+    --text-danger: var(--clay-200);
+    --border-subtle: var(--sand-900);
+    --border-default: var(--sand-800);
+    --border-strong: var(--sand-700);
+    --border-brand: var(--clay-400);
+    --border-focus: var(--clay-300);
+    --border-on-emphasis: var(--sand-700);
+    --icon-primary: var(--sand-50);
+    --icon-secondary: var(--sand-400);
+    --icon-brand: var(--clay-300);
+    --icon-on-brand: var(--sand-950);
+    --icon-on-emphasis: var(--sand-50);
+    --icon-success: var(--moss-300);
+    --icon-warning: var(--ember-300);
+    --icon-danger: var(--clay-300);
+    --icon-disabled: var(--sand-600);
+    --status-success-bg: var(--moss-900);
+    --status-success-fg: var(--moss-200);
+    --status-warning-bg: var(--ember-900);
+    --status-warning-fg: var(--ember-200);
+    --status-danger-bg: var(--clay-900);
+    --status-danger-fg: var(--clay-200);
+    --status-neutral-bg: var(--sand-800);
+    --status-neutral-fg: var(--sand-300);
+    --decor-clay: var(--clay-500);
+    --decor-moss: var(--moss-500);
+    --decor-ember: var(--ember-500);
+    --decor-sand: var(--sand-600);
+    --decor-clay-soft: var(--clay-900);
+    --decor-moss-soft: var(--moss-900);
+    --decor-ember-soft: var(--ember-900);
+    --effect-shadow-soft: var(--alpha-black-40);
+    --effect-shadow-strong: var(--alpha-black-60);
+    --effect-focus-ring: var(--alpha-clay-light-40);
+  }
+}
+
+/* Layout · espaciados y tipografía fluidos (390 → 834 px) y anchos máximos en móvil */
+:root {
+  --layout-frame-width: 90rem;
+  --layout-page-padding: clamp(1.25rem, 4.5045vw + 0.152rem, 2.5rem); /* --space-20 → --space-40 */
+  --layout-section-padding: clamp(4rem, 7.2072vw + 2.2432rem, 6rem); /* --space-64 → --space-96 */
+  --layout-section-gap: clamp(2.5rem, 3.6036vw + 1.6216rem, 3.5rem); /* --space-40 → --space-56 */
+  --layout-grid-gap: clamp(1rem, 0.9009vw + 0.7804rem, 1.25rem); /* --space-16 → --space-20 */
+  --layout-content-gap: clamp(1.5rem, 0.9009vw + 1.2804rem, 1.75rem); /* --space-24 → --space-28 */
+  --layout-feature-gap: clamp(2rem, 3.6036vw + 1.1216rem, 3rem); /* --space-32 → --space-48 */
+  --layout-block-gap: clamp(4.5rem, 5.4054vw + 3.1824rem, 6rem); /* --space-72 → --space-96 */
+  --layout-card-padding: clamp(1.5rem, 0.9009vw + 1.2804rem, 1.75rem); /* --space-24 → --space-28 */
+  --layout-media-padding: clamp(1.25rem, 4.5045vw + 0.152rem, 2.5rem); /* --space-20 → --space-40 */
+  --layout-arch-padding-top: clamp(6rem, 10.8108vw + 3.3649rem, 9rem); /* --space-96 → --space-144 */
+  --layout-cta-padding: clamp(2.5rem, 5.4054vw + 1.1824rem, 4rem); /* --space-40 → --space-64 */
+  --type-display-size: clamp(2.5rem, 3.6036vw + 1.6216rem, 3.5rem); /* --font-size-40 → --font-size-56 */
+  --type-display-line-height: clamp(2.75rem, 3.6036vw + 1.8716rem, 3.75rem); /* --line-height-44 → --line-height-60 */
+  --type-h2-size: clamp(2rem, 1.8018vw + 1.5608rem, 2.5rem); /* --font-size-32 → --font-size-40 */
+  --type-h2-line-height: clamp(2.375rem, 2.2523vw + 1.826rem, 3rem); /* --line-height-38 → --line-height-48 */
+  --type-h3-size: clamp(1.5rem, 0.9009vw + 1.2804rem, 1.75rem); /* --font-size-24 → --font-size-28 */
+  --type-h3-line-height: clamp(1.875rem, 1.3514vw + 1.5456rem, 2.25rem); /* --line-height-30 → --line-height-36 */
+  --type-h4-size: clamp(1.125rem, 0.4505vw + 1.0152rem, 1.25rem); /* --font-size-18 → --font-size-20 */
+  --type-h4-line-height: clamp(1.625rem, 0.4505vw + 1.5152rem, 1.75rem); /* --line-height-26 → --line-height-28 */
+  --type-body-lg-size: clamp(1.0625rem, 0.2252vw + 1.0076rem, 1.125rem); /* --font-size-17 → --font-size-18 */
+  --type-body-lg-line-height: clamp(1.625rem, 0.4505vw + 1.5152rem, 1.75rem); /* --line-height-26 → --line-height-28 */
+  --type-quote-size: clamp(1.125rem, 0.4505vw + 1.0152rem, 1.25rem); /* --font-size-18 → --font-size-20 */
+  --type-quote-line-height: clamp(1.75rem, 0.4505vw + 1.6402rem, 1.875rem); /* --line-height-28 → --line-height-30 */
+  --type-price-size: clamp(2.5rem, 1.8018vw + 2.0608rem, 3rem); /* --font-size-40 → --font-size-48 */
+  --type-price-line-height: clamp(2.75rem, 1.8018vw + 2.3108rem, 3.25rem); /* --line-height-44 → --line-height-52 */
+  --layout-hero-media-width: 100%;
+  --layout-hero-text-width: 100%;
+  --layout-header-width: 100%;
+  --layout-step-width: 100%;
+  --layout-plan-width: 100%;
+  --layout-testimonial-width: 100%;
+  --layout-feature-text-width: 100%;
+  --layout-feature-media-width: 100%;
+  --layout-faq-head-width: 100%;
+  --layout-faq-list-width: 100%;
+  --layout-footer-brand-width: 100%;
+  --layout-footer-col-width: 10.3125rem;
+}
+
+/* Layout · fluido 834 → 1440 px */
+@media (min-width: 834px) {
+  :root {
+    --layout-page-padding: clamp(2.5rem, 13.2013vw - 4.3812rem, 7.5rem); /* --space-40 → --space-120 */
+    --layout-section-padding: clamp(6rem, 3.9604vw + 3.9356rem, 7.5rem); /* --space-96 → --space-120 */
+    --layout-section-gap: clamp(3.5rem, 1.3201vw + 2.8119rem, 4rem); /* --space-56 → --space-64 */
+    --layout-grid-gap: clamp(1.25rem, 0.6601vw + 0.9059rem, 1.5rem); /* --space-20 → --space-24 */
+    --layout-content-gap: clamp(1.75rem, 0.6601vw + 1.4059rem, 2rem); /* --space-28 → --space-32 */
+    --layout-feature-gap: clamp(3rem, 5.2805vw + 0.2475rem, 5rem); /* --space-48 → --space-80 */
+    --layout-block-gap: clamp(6rem, 3.9604vw + 3.9356rem, 7.5rem); /* --space-96 → --space-120 */
+    --layout-card-padding: clamp(1.75rem, 0.6601vw + 1.4059rem, 2rem); /* --space-28 → --space-32 */
+    --layout-media-padding: clamp(2.5rem, 1.3201vw + 1.8119rem, 3rem); /* --space-40 → --space-48 */
+    --layout-arch-padding-top: clamp(9rem, 2.6403vw + 7.6238rem, 10rem); /* --space-144 → --space-160 */
+    --layout-cta-padding: clamp(4rem, 2.6403vw + 2.6238rem, 5rem); /* --space-64 → --space-80 */
+    --type-display-size: clamp(3.5rem, 2.6403vw + 2.1238rem, 4.5rem); /* --font-size-56 → --font-size-72 */
+    --type-display-line-height: clamp(3.75rem, 2.6403vw + 2.3738rem, 4.75rem); /* --line-height-60 → --line-height-76 */
+    --type-h2-size: clamp(2.5rem, 1.3201vw + 1.8119rem, 3rem); /* --font-size-40 → --font-size-48 */
+    --type-h2-line-height: clamp(3rem, 1.3201vw + 2.3119rem, 3.5rem); /* --line-height-48 → --line-height-56 */
+    --type-h3-size: clamp(1.75rem, 0.6601vw + 1.4059rem, 2rem); /* --font-size-28 → --font-size-32 */
+    --type-h3-line-height: clamp(2.25rem, 0.6601vw + 1.9059rem, 2.5rem); /* --line-height-36 → --line-height-40 */
+    --type-h4-size: 1.25rem; /* --font-size-20 → --font-size-20 */
+    --type-h4-line-height: 1.75rem; /* --line-height-28 → --line-height-28 */
+    --type-body-lg-size: clamp(1.125rem, 0.33vw + 0.953rem, 1.25rem); /* --font-size-18 → --font-size-20 */
+    --type-body-lg-line-height: clamp(1.75rem, 0.33vw + 1.578rem, 1.875rem); /* --line-height-28 → --line-height-30 */
+    --type-quote-size: clamp(1.25rem, 0.33vw + 1.078rem, 1.375rem); /* --font-size-20 → --font-size-22 */
+    --type-quote-line-height: clamp(1.875rem, 0.33vw + 1.703rem, 2rem); /* --line-height-30 → --line-height-32 */
+    --type-price-size: 3rem; /* --font-size-48 → --font-size-48 */
+    --type-price-line-height: 3.25rem; /* --line-height-52 → --line-height-52 */
+  }
+}
+
+/* Layout · anchos en diseño de tablet (≥ 768px) */
+@media (min-width: 768px) {
+  :root {
+    --layout-hero-media-width: 100%;
+    --layout-hero-text-width: 100%;
+    --layout-header-width: 40rem;
+    --layout-step-width: 14.875rem;
+    --layout-plan-width: 35rem;
+    --layout-testimonial-width: 22.9375rem;
+    --layout-feature-text-width: 40rem;
+    --layout-feature-media-width: 100%;
+    --layout-faq-head-width: 100%;
+    --layout-faq-list-width: 100%;
+    --layout-footer-brand-width: 100%;
+    --layout-footer-col-width: 13.75rem;
+  }
+}
+
+/* Layout · anchos en diseño de escritorio (≥ 1200px) */
+@media (min-width: 1200px) {
+  :root {
+    --layout-hero-media-width: 75rem;
+    --layout-hero-text-width: 60rem;
+    --layout-header-width: 45rem;
+    --layout-step-width: 24rem;
+    --layout-plan-width: 24rem;
+    --layout-testimonial-width: 24rem;
+    --layout-feature-text-width: 30rem;
+    --layout-feature-media-width: 40rem;
+    --layout-faq-head-width: 24rem;
+    --layout-faq-list-width: 45rem;
+    --layout-footer-brand-width: 22.5rem;
+    --layout-footer-col-width: 11.25rem;
+  }
+}

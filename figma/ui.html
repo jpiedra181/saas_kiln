@@ -1,0 +1,74 @@
+<style>
+  body {
+    font:
+      13px/1.4 system-ui,
+      sans-serif;
+    margin: 0;
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+  }
+  p {
+    margin: 0;
+  }
+  textarea {
+    width: 100%;
+    height: 200px;
+    font:
+      11px/1.4 ui-monospace,
+      monospace;
+    box-sizing: border-box;
+  }
+  .row {
+    display: flex;
+    gap: 8px;
+  }
+  button {
+    font: inherit;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+</style>
+<p id="status">Exportando variables y estilos…</p>
+<textarea id="out" readonly aria-label="JSON exportado"></textarea>
+<div class="row">
+  <button id="download" disabled>Descargar figma.json</button>
+  <button id="copy" disabled>Copiar</button>
+  <button id="close">Cerrar</button>
+</div>
+<script>
+  const out = document.getElementById('out');
+  const status = document.getElementById('status');
+  const download = document.getElementById('download');
+  const copy = document.getElementById('copy');
+  onmessage = (event) => {
+    const msg = event.data.pluginMessage;
+    if (!msg) return;
+    if (msg.type === 'error') {
+      status.textContent = 'Error: ' + msg.message;
+      return;
+    }
+    const json = JSON.stringify(msg.data, null, 2) + '\n';
+    out.value = json;
+    status.textContent =
+      msg.data.variables.length +
+      ' variables, ' +
+      msg.data.textStyles.length +
+      ' estilos de texto y ' +
+      msg.data.effectStyles.length +
+      ' de efecto. Guárdalo en tokens/figma.json y ejecuta npm run tokens.';
+    download.disabled = copy.disabled = false;
+    download.onclick = () => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
+      a.download = 'figma.json';
+      a.click();
+    };
+    copy.onclick = () => {
+      out.select();
+      document.execCommand('copy');
+      status.textContent = 'Copiado.';
+    };
+  };
+  document.getElementById('close').onclick = () => parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+</script>

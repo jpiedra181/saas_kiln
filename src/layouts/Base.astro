@@ -1,0 +1,93 @@
+---
+import { Font } from 'astro:assets';
+import '../styles/global.css';
+import { defaultLocale, htmlLang, locales, localizedPath, useTranslations, type Locale } from '../i18n';
+import { resolveToken } from '../lib/tokens';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { locale, title, description, noindex = false } = Astro.props;
+const t = useTranslations(locale);
+const site = Astro.site ?? new URL(Astro.url.origin);
+const canonical = new URL(Astro.url.pathname, site).href;
+const alternates = locales.map((code) => ({ code, href: new URL(localizedPath(Astro.url.pathname, code), site).href }));
+const xDefault = new URL(localizedPath(Astro.url.pathname, defaultLocale), site).href;
+const themeColor = { light: resolveToken('bg/canvas', 'Light'), dark: resolveToken('bg/canvas', 'Dark') };
+---
+
+<!doctype html>
+<html lang={htmlLang[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      Tema sin parpadeo: antes de pintar se aplica la preferencia guardada o, si no hay, la del sistema.
+      También activa las animaciones de entrada solo si hay JS y no se pide movimiento reducido.
+    -->
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        var theme = null;
+        try {
+          theme = localStorage.getItem('kiln-theme');
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        root.setAttribute('data-theme', theme);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          root.classList.add('motion');
+          setTimeout(function () {
+            if (!window.__kilnMotion) root.classList.remove('motion');
+          }, 3000);
+        }
+      })();
+    </script>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map(({ code, href }) => (
+      <link rel="alternate" hreflang={code} href={href} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content={themeColor.light}
+      media="(prefers-color-scheme: light)"
+      data-theme-color="light"
+    />
+    <meta name="theme-color" content={themeColor.dark} media="(prefers-color-scheme: dark)" data-theme-color="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t('brand.name')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_GB'} />
+    <meta name="twitter:card" content="summary" />
+
+    <Font cssVariable="--font-instrument-sans" preload />
+    <Font cssVariable="--font-fraunces" preload />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="focus-ring sr-only fixed top-16 left-16 z-50 rounded-full bg-emphasis px-16 py-10 type-label-md text-on-emphasis focus-visible:not-sr-only"
+    >
+      {t('a11y.skip')}
+    </a>
+    <slot />
+    <script>
+      import '../scripts/main';
+    </script>
+  </body>
+</html>

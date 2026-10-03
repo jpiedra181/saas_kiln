@@ -1,0 +1,17 @@
+# Generados desde Figma (npm run tokens): se comparan byte a byte en tokens:check
+src/styles/tokens.css
+src/styles/tailwind.theme.css
+src/i18n/figma/
+tokens/figma.json
+
+# Builds, informes y binarios
+dist/
+.astro/
+node_modules/
+playwright-report/
+test-results/
+tests/visual/output/
+tests/visual/reference/
+.lighthouseci/
+src/assets/
+screenshots/

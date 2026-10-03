@@ -1,0 +1,63 @@
+---
+/**
+ * Interruptor mensual/anual (componente "Billing toggle" de Figma).
+ * role="switch": activado = facturación anual. src/scripts/billing.ts cambia los precios de las tarjetas.
+ */
+import Badge from '../ui/Badge.astro';
+import { useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<div class="flex flex-wrap items-center justify-center gap-12" data-billing>
+  <span class="billing-label type-label-md text-primary" data-billing-period="monthly" aria-hidden="true">
+    {t('pricing.monthly')}
+  </span>
+  <button
+    type="button"
+    role="switch"
+    aria-checked="false"
+    aria-label={t('a11y.billing-annual')}
+    class="billing-switch focus-ring flex h-28 w-48 shrink-0 items-center rounded-full bg-toggle-off p-4 transition-colors hover:bg-toggle-off-hover active:bg-toggle-off-hover aria-checked:bg-brand aria-checked:hover:bg-brand-hover aria-checked:active:bg-brand-pressed"
+    data-billing-switch
+  >
+    <span class="billing-knob size-20 rounded-full bg-knob shadow-sm transition-transform"></span>
+  </button>
+  <span class="billing-label type-label-md text-secondary" data-billing-period="annual" aria-hidden="true">
+    {t('pricing.annual')}
+  </span>
+  <Badge tone="success" dot={false}>
+    {t('pricing.save')}
+  </Badge>
+  <p
+    class="sr-only"
+    aria-live="polite"
+    data-billing-status
+    data-monthly={t('a11y.billing-now-monthly')}
+    data-annual={t('a11y.billing-now-annual')}
+  ></p>
+</div>
+
+<style>
+  @reference '../../styles/global.css';
+
+  /* Desplazamiento del mando: ancho del interruptor − mando − relleno (48 − 20 − 2×4 = space/20). */
+  .billing-switch[aria-checked='true'] .billing-knob {
+    transform: translateX(var(--space-20));
+  }
+  [data-billing]:has([aria-checked='true']) [data-billing-period='monthly'] {
+    @apply text-secondary;
+  }
+  [data-billing]:has([aria-checked='true']) [data-billing-period='annual'] {
+    @apply text-primary;
+  }
+  .billing-label {
+    cursor: pointer;
+    user-select: none;
+  }
+</style>

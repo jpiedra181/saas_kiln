@@ -1,0 +1,27 @@
+---
+/** Avatar de iniciales (componente "Avatar" de Figma). */
+export type AvatarTone = 'clay' | 'moss' | 'ember' | 'sand';
+
+interface Props {
+  initials: string;
+  size?: 'sm' | 'md';
+  tone?: AvatarTone;
+  class?: string;
+}
+
+const { initials, size = 'sm', tone = 'clay', class: className } = Astro.props;
+const tones: Record<AvatarTone, string> = {
+  clay: 'bg-decor-clay-soft text-status-danger',
+  moss: 'bg-decor-moss-soft text-status-success',
+  ember: 'bg-decor-ember-soft text-status-warning',
+  sand: 'bg-status-neutral text-status-neutral',
+};
+const sizes = { sm: 'size-28 type-app-label', md: 'size-40 type-label-sm' };
+---
+
+<span
+  class:list={['inline-flex shrink-0 items-center justify-center rounded-full', tones[tone], sizes[size], className]}
+  aria-hidden="true"
+>
+  {initials}
+</span>

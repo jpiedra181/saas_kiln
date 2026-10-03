@@ -1,0 +1,75 @@
+---
+/**
+ * Pie (sección "Footer" con "Footer column" de Figma).
+ * En móvil las columnas pasan a la línea siguiente en lugar de recortarse como en el frame de 390.
+ */
+import Logo from '../ui/Logo.astro';
+import TextLink from '../ui/TextLink.astro';
+import LanguageSwitcher from '../controls/LanguageSwitcher.astro';
+import ThemeSwitch from '../controls/ThemeSwitch.astro';
+import { links } from '../../config/site';
+import { localizedPath, useTranslations, type Locale } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const columns = [
+  { key: 'product', hrefs: links.footer.product },
+  { key: 'company', hrefs: links.footer.company },
+  { key: 'resources', hrefs: links.footer.resources },
+] as const;
+const linkNumbers = [1, 2, 3, 4] as const;
+const legal = [1, 2, 3] as const;
+---
+
+<footer class="border-t border-default bg-canvas px-page pt-section-gap pb-40" data-section="footer">
+  <div class="mx-auto flex w-full max-w-hero-media flex-col gap-section-gap">
+    <div class="flex flex-wrap items-start justify-between gap-x-grid gap-y-section-gap">
+      <div class="flex w-footer-brand max-w-full flex-col items-start gap-20">
+        <a href={localizedPath('/', locale)} class="flex rounded-4" aria-label={t('a11y.home')}>
+          <Logo name={t('brand.name')} />
+        </a>
+        <p class="type-body-md text-secondary">{t('footer.tagline')}</p>
+        <div class="flex flex-wrap items-center gap-12">
+          <LanguageSwitcher locale={locale} id="lang-footer" />
+          <ThemeSwitch locale={locale} />
+        </div>
+      </div>
+
+      <div class="grid w-full grid-cols-2 gap-x-grid gap-y-32 md:w-auto md:grid-cols-[repeat(3,var(--layout-footer-col-width))]">
+        {columns.map(({ key, hrefs }) => (
+          <nav aria-labelledby={`footer-${key}`} class="flex flex-col gap-16">
+            <h2 id={`footer-${key}`} class="type-overline text-tertiary">
+              {t(`footer.${key}.title`)}
+            </h2>
+            <ul class="flex flex-col items-start gap-12">
+              {linkNumbers.map((n, i) => (
+                <li class="flex">
+                  <TextLink tone="neutral" size="sm" href={hrefs[i]}>
+                    {t(`footer.${key}.link-${n}`)}
+                  </TextLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-between gap-x-24 gap-y-12 border-t border-subtle pt-24">
+      <p class="type-body-sm text-tertiary">{t('footer.copyright')}</p>
+      <ul class="flex flex-wrap items-start gap-24">
+        {legal.map((n, i) => (
+          <li class="flex">
+            <TextLink tone="neutral" size="sm" href={links.footer.legal[i]}>
+              {t(`footer.legal-${n}`)}
+            </TextLink>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</footer>

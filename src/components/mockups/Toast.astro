@@ -1,0 +1,28 @@
+---
+/** Notificación flotante de los mockups (componente "Toast" de Figma). */
+import Icon, { type IconName } from '../ui/Icon.astro';
+
+interface Props {
+  icon: IconName;
+  title: string;
+  meta: string;
+  class?: string;
+}
+
+const { icon, title, meta, class: className } = Astro.props;
+---
+
+<div
+  class:list={[
+    'flex items-center gap-12 rounded-16 border border-default bg-surface-raised px-16 py-12 shadow-lg',
+    className,
+  ]}
+>
+  <span class="flex size-icon-wrap shrink-0 items-center justify-center rounded-full bg-status-success icon-success">
+    <Icon name={icon} class="size-icon-md" />
+  </span>
+  <span class="flex flex-col gap-2 whitespace-nowrap">
+    <span class="type-app-strong text-primary">{title}</span>
+    <span class="type-app-label text-tertiary">{meta}</span>
+  </span>
+</div>
